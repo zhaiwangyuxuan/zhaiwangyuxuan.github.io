@@ -1,9 +1,9 @@
 ---
-title: 【pytorch笔记】损失函数、反向传播与优化器optimizer
-date: 2024-10-20 15:00:00 +0800
+title: 【pytorch笔记】损失函数反向传播与优化器optimizer
+date: 2024-10-20 10:00:00 +0800
 categories: [deep learning, pytorch]
 tags: [deep learning, python, pytorch]     # TAG names should always be lowercase
-description: 损失函数、反向传播与优化器optimizer
+description: 损失函数反向传播与优化器optimizer
 ---
 
 ## 前言
