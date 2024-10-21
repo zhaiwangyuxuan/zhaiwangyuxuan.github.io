@@ -1,9 +1,9 @@
 ---
-title: 【pytorch笔记】Dataset, Dataloader, model S&L
+title: 【pytorch笔记】Dataset, Dataloader, model S&L, others
 date: 2024-10-21 10:00:00 +0800
 categories: [deep learning, pytorch]
 tags: [deep learning, python, pytorch]     # TAG names should always be lowercase
-description: Dataset, Dataloader, model S&L
+description: Dataset, Dataloader, model S&L, others
 ---
 
 ## 前言
@@ -15,6 +15,7 @@ description: Dataset, Dataloader, model S&L
 
 - 简单记录 dataset 和 dataloader 用法
 - 简单记录 model 的 S&L 方法
+- 杂项
 
 ## Dataset 与下属类
 
@@ -114,4 +115,41 @@ vgg16.load_state_dict(torch.load("vgg16_save.pth"))
 # .pth.tar数据载入
 checkpoint = torch.load("resnet50_places365.pth.tar")
 resnet50.load_state_dict(checkpoint['state_dict'])
-````
+```
+
+## 杂项
+
+### 获取`acc`与`f1 score`
+
+```python
+target = torch.tensor([[0.1,  0.2],
+                       [0.05, 0.4]])
+
+pred_row = target.argmax(1) # 按行为顺序比较
+# tensor([1, 1])
+pred_col = target.argmax(0) # 按列为顺序比较
+# tensor([0, 1])
+
+output = torch.tensor([0, 1])
+
+print(output == pred_row)
+# tensor([False,  True])
+print(output == pred_col)
+# tensor([True, True])
+```
+
+- 一些我当时训练`Resnet50`的时候写的：
+
+```python
+correct_num = (predicted == labels).sum().item() # sum求和 item转换成数
+correct = correct + correct_num
+
+accuracy = correct / total
+f1 = f1_score(all_labels, all_preds, average='weighted')  # 使用加权平均
+```
+
+### 调整训练与评估模式
+```python
+model.train()
+model.eval()
+```
