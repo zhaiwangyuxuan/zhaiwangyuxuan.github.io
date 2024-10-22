@@ -1,6 +1,6 @@
 ---
-title: 【pytorch笔记】Dataset, Dataloader, model S&L, others
-date: 2024-10-21 10:00:00 +0800
+title: 【pytorch笔记/土堆pytorch完结】Dataset, Dataloader, model S&L, others
+date: 2024-10-22 10:00:00 +0800
 categories: [deep learning, pytorch]
 tags: [deep learning, python, pytorch]     # TAG names should always be lowercase
 description: Dataset, Dataloader, model S&L, others
@@ -152,4 +152,53 @@ f1 = f1_score(all_labels, all_preds, average='weighted')  # 使用加权平均
 ```python
 model.train()
 model.eval()
+```
+
+### 利用GPU训练
+
+- 可以使用`.cuda()`：model、`loss`类、在训练/评估中，使用dataloader后的样本和标签可以用`.cuda()`（虽然不会直接显示可以用）
+- 不能使用`.cuda()`：dataset（继承了`Dataset`类）、optimizer
+
+
+- 第一种办法
+
+```python
+if torch.cuda.is_available():
+    model = model.cuda() # 第一种
+```
+
+- 第二种办法
+
+```python
+device = torch.device("cpu")
+
+# 默认 cuda:0
+# 也可以设定为 cuda:1 ...
+device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
+
+model = torchvision.models.resnet50()
+model.to(device)
+```
+
+> 妙用`torch.cuda.is_available()`
+{: .prompt-info }
+
+- 可以使用`time`库来检查花了多少时间
+```python
+import time
+st_time = time.time()
+en_time = time.time()
+cost_time = en_time - st_time
+```
+
+### 模型验证套路
+
+```python
+# 假设现在有一个模型 model
+model.eval()
+
+with torch.no_grad(): # 评估的时候就不用更新梯度了
+    for imgs, label in dataloader:
+        # ....
+        # ....
 ```
