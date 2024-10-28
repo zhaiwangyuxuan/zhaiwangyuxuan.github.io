@@ -27,6 +27,11 @@ tensorboard --logdir=logs
 tensorboard --logdir=logs --port=6007
 ```
 
+### 增加可以显示的图片
+```bash
+tensorboard --logdir=logs --samples_per_plugin=images=10000
+```
+
 ## 测试代码01
 ```python
 from torch.utils.tensorboard import SummaryWriter # 这是一个类
