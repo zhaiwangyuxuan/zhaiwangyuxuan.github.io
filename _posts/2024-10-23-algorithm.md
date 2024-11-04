@@ -1,12 +1,13 @@
 ---
-title: 【算法刷题】蓝桥杯相关反思总结
+title: 【算法刷题】相关反思总结
 date: 2024-10-23 00:10:00 +0800
 categories: [algorithm, LanQiaoBei]
 tags: [algorithm competition]     # TAG names should always be lowercase
-description: 【算法刷题】蓝桥杯相关反思总结
+description: 【算法刷题】相关反思总结
 ---
 
-## 多造特殊样例进行测试，蓝桥杯一锤定音，水题绝对不能出错！
+## 蓝桥杯要多造特殊样例进行测试，水题绝对不能出错！
+## CSP则多关注大模拟！模拟近期要多练！
 
 ## 随手开`long long`，要不然就用`1ll`
 
@@ -75,3 +76,19 @@ cout << *myset.rbegin() << endl;
 - Dijkstra - 不允许有负权边 - 单源最短路问题 - O(mlogn)（优化后的） - 贪心
 
 如果一个题目的规模很大，并且边的权值为非负数，则它很可能故意设置了不利于`SPFA`的测试数据，此时应该考虑`Dijkstra`算法。`Dijkstra`算法是一种稳定的算法，一次迭代至少能找到一个结点到s的最短路径，最多只需要m(边数)次迭代就可完成。
+
+## 数论积累
+
+### 两个数字凑不出的最大数字
+- [蓝桥杯例题-买不到的数目](https://www.acwing.com/problem/content/1207/)
+- 引理：给定`a`、`b`，若 `d = gcd(a, b) > 1`，则两个数一定不能凑出最大数
+- **结论**；如果`a`，`b`是正整数并且互质，那么由`ax + by, x >= 0, y >= 0`不能凑出的最大数字是`ab - a - b`
+- [yxc讲解](https://www.acwing.com/solution/acwing/content/3165/) 
+
+-------------
+
+## 刷题量记录（不记录过水的题）
+- 以2024.11.01 以300题为起始点计数
+- 2024.11.02 两道题
+- 2024.11.03 赶DDL没刷题
+- 2024.11.04 
