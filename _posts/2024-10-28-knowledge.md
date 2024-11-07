@@ -7,6 +7,15 @@ description: 【学术】个人知识库
 pin: true
 ---
 
+## 增加github克隆成功概率
+
+- 用 ghproxy 代理进行 git clone
+- 重点在于，在原本要克隆的网站地址前加入 `https://mirror.ghproxy.com/`
+
+```bash
+git clone https://mirror.ghproxy.com/https://github.com/........
+```
+
 ## 微调大模型
 
 - [用抱抱脸transformers微调ViT](https://huggingface.co/blog/fine-tune-vit)
