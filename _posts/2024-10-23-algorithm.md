@@ -6,8 +6,12 @@ tags: [algorithm competition]     # TAG names should always be lowercase
 description: 【算法刷题】相关反思总结
 ---
 
+## 2024.12.08 更新
+- 第三十六次 CCF-CSP 认证结果：
+- 300 = 100 + 80 + 90 + 30 + 0
+- CSP 堂堂完结！
+
 ## 蓝桥杯要多造特殊样例进行测试，水题绝对不能出错！
-## CSP则多关注大模拟！模拟近期要多练！
 
 ------
 
@@ -95,6 +99,84 @@ int a = (-b + mod) % mod;
 
 如果一个题目的规模很大，并且边的权值为非负数，则它很可能故意设置了不利于`SPFA`的测试数据，此时应该考虑`Dijkstra`算法。`Dijkstra`算法是一种稳定的算法，一次迭代至少能找到一个结点到s的最短路径，最多只需要m(边数)次迭代就可完成。
 
+### 最小生成树
+
+- 并查集
+
+```cpp
+// 路径优化并查集 查询根节点
+int find(int x)
+{
+    if(pa[x] != x) pa[x] = find(pa[x]);
+    return pa[x];
+}
+```
+
+- `Krustal`算法
+
+    时间复杂度 O(mlogm)
+
+```cpp
+// 该算法的基本思想是从小到大加入边，是个贪心算法。
+// 排序一下就行
+// 维护一堆 集合，查询两个元素是否属于同一集合，合并两个集合。
+// 显然需要使用并查集
+// ve 为 {u, v, w}
+
+for(auto node : ve)
+{
+    int rootu = find(node.u);
+    int rootv = find(node.v);
+    if(rootu == rootv) continue;
+    else
+    {
+        pa[rootu] = rootv;
+        ans += node.w;
+        cnt ++;
+    }
+}
+
+// 对有 n 个节点的最小生成树
+// 有且必有 n - 1 个边
+if(cnt < n - 1) cout << "impossible";
+else cout << ans;
+```
+
+- `Prim`算法
+
+    时间复杂度 O(n^2 + m)
+
+```cpp
+// 进行 n 次循环 每个结点都要遍历到
+    for(int i = 1; i <= n; i ++)
+    {
+        int now_node = -1;
+
+        // 现在选哪个结点呢
+        for(int j = 1; j <= n; j ++)
+        {
+            // 该节点没有被选过 且 距离更近
+            if(!st[j] && (now_node == -1 || dist[j] < dist[now_node])) now_node = j;
+        }
+
+        // 如果当前不是第一个结点 但距离却是 INF
+        // 非连通图 必然没有最小生成树
+        if(now_node != 1 && dist[now_node] == INF) return INF;
+
+        // 不是第一个点 则更新结局
+        if(now_node != 1) res += dist[now_node];
+
+        // 标记了一个走过的点
+        st[now_node] = true;
+
+        // 更新距离
+        for(int j = 1; j <= n; j ++)
+        {
+            dist[j] = min(dist[j], g[now_node][j]);
+        }
+    }
+```
+
 ------------------------------
 
 ## 杂项
@@ -156,3 +238,7 @@ int qmi(int a, int b, int MOD);
 - 2024.11.10 赶作业（留AI专业课作业的老师也是神人了）
 - 2024.11.11 五道题 一道简单模拟 一道简单哈夫曼树板子 一道dijk板子 一道水模拟 一道水数论
 - 2024.11.12 两道题 一道KMP板子变式题（终于能写出来KMP了） 一道小模拟
+- 2024.11.13 两道题 一道水题 一道中等打表模拟题
+- 2024.11.14 两道题 一道二维前缀和 一道大模拟 这就是奋变.jpg 但其实有些感觉了 —— 比如说边看题面要边画思维导图，写代码时要一步一步来。可以实现一个要求后就画个勾，防止自己最终忘了写某些要求
+
+- 坏了，我忘了记录了，就这样吧，刷题记录到此结束（（（（

@@ -209,3 +209,6 @@ inputs.word_ids()
 tokenizer = AutoTokenizer.from_pretrained("./xxxx", trust_remote_code=True)
 # 就算是本地加载也要trust_remote_code=True
 ```
+
+## 基础组件之Model
+
