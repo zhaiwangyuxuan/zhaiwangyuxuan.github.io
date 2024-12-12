@@ -6,19 +6,22 @@ tags: [algorithm competition]     # TAG names should always be lowercase
 description: 【算法刷题】相关反思总结
 ---
 
-## 2024.12.08 更新
-- 第三十六次 CCF-CSP 认证结果：
-- 300 = 100 + 80 + 90 + 30 + 0
-- CSP 堂堂完结！
 
 ## 蓝桥杯要多造特殊样例进行测试，水题绝对不能出错！
 
 ------
 
+## 2024.12.08 更新
+- 第三十六次 CCF-CSP 认证结果：
+- 300 = 100 + 80 + 90 + 30 + 0
+- CSP 堂堂完结！
+
 ## 模拟题积累
 
 ### 处理字符串特别好用的 `stringstream` 类
+
 - `stringstream`是C++提供的专门用于处理字符串的输入输出**流类**，也就是说，这个跟`cin`与`cout`是一类呦！
+
 ```cpp
 // 创建对象
 stringstream ss;
