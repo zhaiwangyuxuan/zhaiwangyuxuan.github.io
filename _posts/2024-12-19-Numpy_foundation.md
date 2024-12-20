@@ -1,6 +1,6 @@
 ---
 title: 【AI程设】NumPy 基础
-date: 2024-11-08 10:00:00 +0800
+date: 2024-12-19 20:00:00 +0800
 categories: [BJTU, NumPy]
 tags: [python]     # TAG names should always be lowercase
 description: AI程设课上教的 NumPy 基础

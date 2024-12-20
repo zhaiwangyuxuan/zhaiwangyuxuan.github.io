@@ -1,6 +1,6 @@
 ---
 title: 【AI程设】Python 基础
-date: 2024-11-08 10:00:00 +0800
+date: 2024-12-19 10:00:00 +0800
 categories: [BJTU, AI_programming]
 tags: [python]     # TAG names should always be lowercase
 description: AI程设课上教的 Python 基础
