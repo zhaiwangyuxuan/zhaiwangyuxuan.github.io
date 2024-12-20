@@ -3,7 +3,7 @@ title: 【大模型】huggingface_transformers
 date: 2024-11-08 10:00:00 +0800
 categories: [LLM/MLLM, huggingface]
 tags: [LLM/MLLM, huggingface]     # TAG names should always be lowercase
-description: 挑战一周上手transformers
+description: transformers
 ---
 
 *发现如果按照之前pytorch那么写笔记的话，要写好几条，这次我干脆就整合成一条了*
