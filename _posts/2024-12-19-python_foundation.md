@@ -6,7 +6,7 @@ tags: [python]     # TAG names should always be lowercase
 description: AI程设课上教的 Python 基础
 ---
 
-    > 内容来源于 北京交通大学 计算机学院 人工智能专业 大二专业课 人工智能程序设计
+> 内容来源于 北京交通大学 计算机学院 人工智能专业 大二专业课 人工智能程序设计
 
 # `Python` 基础
 
