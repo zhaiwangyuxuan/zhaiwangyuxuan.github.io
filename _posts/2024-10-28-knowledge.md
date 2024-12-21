@@ -7,6 +7,14 @@ description: 【学术】个人知识库
 pin: true
 ---
 
+## GitHub Desktop GPG
+
+```bash
+gpg --list-secret-keys --keyid-format LONG
+git config --global user.signingkey <GPG_KEY_ID>
+git config --global commit.gpgsign true
+```
+
 ## 增加github克隆成功概率
 
 - 用 ghproxy 代理进行 git clone
