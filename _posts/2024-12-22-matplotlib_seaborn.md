@@ -141,7 +141,7 @@ plt.title('2000-2017各产业国民生产总值箱线图')
 plt.show()
 ```
 
-![图五](assets/post_img/024-12-22-matplotlib_5.png)
+![图五](assets/post_img/2024-12-22-matplotlib_5.png)
 
 ## `seaborn` 基础
 
