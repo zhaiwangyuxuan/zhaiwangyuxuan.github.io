@@ -119,9 +119,17 @@ df['col_0'].to_frame()
 
 - 注意参数可以输入一个列表！！！
 
+- 使用 `rename()` 方法修改列名，用字典
+
 ```python
 df = df.drop(['row_0'], axis = 0)
 df = df[df.columns[:-1]] # 消除最后一行
+
+# 修改部分列名
+df_renamed = df.rename(columns={'A': 'Alpha', 'B': 'Beta'})
+
+# 直接在原 DataFrame 上修改列名
+df.rename(columns={'C': 'Gamma'}, inplace=True)
 ```
 
 ## 常用基本函数
