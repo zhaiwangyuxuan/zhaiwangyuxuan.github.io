@@ -1,9 +1,9 @@
 ---
-title: 【AI程设】Pandas 索引与分组
-date: 2024-12-21 10:00:00 +0800
+title: 【AI程设】Pandas 变形与连接
+date: 2024-12-22 10:00:00 +0800
 categories: [BJTU, Pandas]
 tags: [python]     # TAG names should always be lowercase
-description: AI程设课上教的 Pandas 索引与分组
+description: AI程设课上教的 Pandas 变形与连接
 ---
 
 > 内容来源于 北京交通大学 计算机学院 人工智能专业 大二专业课 人工智能程序设计
