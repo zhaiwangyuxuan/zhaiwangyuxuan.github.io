@@ -1,7 +1,7 @@
 ---
 title: 【AI程设】scikit-learn 基础
 date: 2024-12-22 10:00:00 +0800
-categories: [BJTU, matplotlib]
+categories: [BJTU, scikit-learn]
 tags: [python]     # TAG names should always be lowercase
 description: AI程设课上教的 scikit-learn
 ---

@@ -12,7 +12,7 @@ description: AI程设课上教的 NumPy 基础
 
 # `NumPy` 基础
 
-- `NumPy 的核心对象是 `ndarray`
+- `NumPy` 的核心对象是 `ndarray`
 
 ## 数组的构造
 

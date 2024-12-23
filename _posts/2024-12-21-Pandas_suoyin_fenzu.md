@@ -225,8 +225,8 @@ print("\n添加 'Cumulative_Count' 列后的 DataFrame:\n", df)
 - 对分组进行筛选。如果一个分组的全体行统计结果返回 `True`，则保留该分组，否则过滤。未被过滤的组及其对应行拼接为新的 `DataFrame` 返回
 
 ```python
-gb = df.groupby['a']('b').transform(['sum', 'mean'])
-gb = df.groupby['a']('b').filter('sum')
+gb = df.groupby('a')['b'].transform(['sum', 'mean'])
+gb = df.groupby('a')['b'].filter('sum')
 ```
 
 - `apply()函数`

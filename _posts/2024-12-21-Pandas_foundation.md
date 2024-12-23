@@ -121,6 +121,12 @@ df['col_0'].to_frame()
 
 - 使用 `rename()` 方法修改列名，用字典
 
+    - 修改列名必须写上 `columns = {'...' : '...'}` 参数
+
+    - 修改行索引则使用 `df.index.rename({'...' : '...'}, inplace = True)`
+
+- 使用 `map(func)` 来合并行索引
+
 ```python
 df = df.drop(['row_0'], axis = 0)
 df = df[df.columns[:-1]] # 消除最后一行
@@ -130,6 +136,17 @@ df_renamed = df.rename(columns={'A': 'Alpha', 'B': 'Beta'})
 
 # 直接在原 DataFrame 上修改列名
 df.rename(columns={'C': 'Gamma'}, inplace=True)
+
+# 修改行索引
+df.index.rename({'gender' : 'Gender'}, inplace=True)
+
+new_index = df_res.index.map(lambda x : (x[0] + '_' + x[1])) 
+df_res.index = new_index
+# 用下划线合并两层行索引
+
+new2_index = df_res.index.map(lambda x : tuple(x.split('_')))
+df_res.index = new2_index
+# 把行索引拆分为原状态
 ```
 
 ## 常用基本函数
