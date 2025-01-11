@@ -24,6 +24,9 @@ git config --global commit.gpgsign true
 git clone https://mirror.ghproxy.com/https://github.com/........
 ```
 
+## huggingface 镜像
+[链接](https://hf-mirror.com/)
+
 ## 微调大模型
 
 - [用抱抱脸transformers微调ViT](https://huggingface.co/blog/fine-tune-vit)
