@@ -7,6 +7,44 @@ description: 【学术】个人知识库
 pin: true
 ---
 
+## anaconda3 用
+
+- 创建与移除环境（包括移除下载的库）
+
+```bash
+conda create -n env_name python=X.X（python版本号）
+
+conda remove -n ENV_NAME --all
+```
+
+- 添加清华镜像源
+
+```bash
+1.查看anaconda中已经存在的镜像源
+
+conda config --show channels
+
+2.添加镜像源(永久添加)
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+
+3.设置搜索时显示通道地址
+
+conda config --set show_channel_urls yes
+```
+
+- 安装gpu版本的pytorch
+
+   1. [官网下载](https://pytorch.org/get-started/previous-versions/)
+
+   2. 找CUDA匹配版本
+
+   3. `conda activate`激活环境后，先尝试用 Conda 下的方式下载
+   
+   4. 不行的话就用 wheel 下的方式下载
+
 ## GitHub Desktop GPG
 
 ```bash
