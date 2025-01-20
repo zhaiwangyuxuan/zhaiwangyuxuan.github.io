@@ -35,6 +35,14 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --set show_channel_urls yes
 ```
 
+- 磁盘空间不够
+
+```bash
+TMPDIR=xxxxx pip install -r requirements.txt --no-cache-dir
+
+# xxxx 为临时路径 不需要带引号
+```
+
 - 安装gpu版本的pytorch
 
    1. [官网下载](https://pytorch.org/get-started/previous-versions/)
@@ -63,9 +71,24 @@ git config --global commit.gpgsign true
 git clone https://mirror.ghproxy.com/https://github.com/........
 ```
 
-## huggingface 镜像
+## huggingface 
 
-[链接](https://hf-mirror.com/)
+[镜像链接](https://hf-mirror.com/)
+
+- 修改缓存路径
+
+```bash
+vim ~/.bashrc
+
+# 在末尾行加入
+export HF_HOME="/path/to/you/dir"  # 替换为你想更改的目标路径
+
+# 立即生效
+source ~/.bashrc
+
+# 查看是否生效
+env | grep HF_HOME
+```
 
 ## vscode ssh 出错
 
