@@ -116,3 +116,12 @@ ne_annotated_sentences = sn.tag_sents(tokenized_sentences)
 ## 微调大模型
 
 - [用抱抱脸transformers微调ViT](https://huggingface.co/blog/fine-tune-vit)
+
+## GPU 显存不够 与 指定显卡
+
+**环境设置要放在最最最最最最前面！！！！！！！！也就是第一二行的位置！！！！**
+
+```python
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+```

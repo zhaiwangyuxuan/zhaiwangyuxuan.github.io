@@ -210,5 +210,70 @@ tokenizer = AutoTokenizer.from_pretrained("./xxxx", trust_remote_code=True)
 # 就算是本地加载也要trust_remote_code=True
 ```
 
-## 基础组件之Model
+## 基础组件之 Model
 
+### 原理概述
+
+- `Transformer`
+
+    - 为编码器 Encoder 与解码器 Decoder 模型；
+    - 形成的 Transformer Block 不断堆叠，由注意力机制 Attention 与 FFN 组成
+    - 注意力机制是核心特征；
+
+- `Attention 注意力机制`
+
+    - 可以有选择性的告诉模型要使用哪些上下文
+
+    ![参考图片](assets/post_img/2024-11-08-huggingface_transformers_02.png)
+
+- `Model Head`
+
+    - 连接在模型后的层，通常为 1 个或多个全连接层
+    - 将模型的编码结果进行映射，以解决不同类型的任务
+
+### 导入与加载
+
+- 通常来讲，我们无法正常下载模型，所以我们需要借助镜像网站下载，并加载本地模型；
+
+- 我参考我自己之前写的 [在这里！](https://zhaiwangyuxuan.github.io/posts/knowledge/)
+
+```python
+# 导入
+from transformers import AutoConfig, AutoModel, AutoTokenizer 
+
+# 1. 你的网很好，想下载 Qwen/Qwen2.5-0.5B-Instruct 可以直接
+model = AutoModel.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct")
+
+# 2. 无法下载，请使用加载本地模型的办法
+model_path = "xxx"
+model = AutoModel.from_pretrained(model_path)
+```
+
+### 模型参数
+
+- *model_args, **kwargs 点进原函数查看就行
+
+```python
+# 体现模型本身的参数
+print(model.config)
+
+# 体现模型运行中 / 额外的可以设置的参数
+config = AutoConfig.from_pretrained(model_path)
+print(config)
+
+# 注意到
+'''
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+'''
+
+# 可以导入 并查看 模型的结构
+from transformers import Qwen2ForCausalLM
+```
+
+## 基础组件之 Datasets
+
+### 简介
+
+- 一个简单易用的数据集加载库，可从本地或者 Huggingface hub 中获取数据集
