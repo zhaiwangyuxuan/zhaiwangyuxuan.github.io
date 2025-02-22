@@ -21,7 +21,7 @@ description: 损失函数反向传播与优化器optimizer
 
 - 相减后得到损失值
 
-![参考图片](assets/post_img/2024-10-19-loss_backward_01.png)
+![参考图片](assets/post_img/2024-10-20-loss_backward_optimizer/2024-10-20-loss_backward_optimizer_01.png)
 
 ```python
 input = torch.tensor([1, 2, 5], dtype=torch.float32)
@@ -35,7 +35,7 @@ print(loss_1) # tensor(0.6667)
 
 - Mean Squared Error 均方误差
 
-![参考图片](assets/post_img/2024-10-19-loss_backward_02.png)
+![参考图片](assets/post_img/2024-10-20-loss_backward_optimizer/2024-10-20-loss_backward_optimizer_02.png)
 
 ```python
 MSEloss = nn.MSELoss() # 默认是"mean"模式

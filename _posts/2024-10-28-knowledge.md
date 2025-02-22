@@ -90,11 +90,13 @@ source ~/.bashrc
 env | grep HF_HOME
 ```
 
-## vscode ssh 出错
+## vscode ssh 出错与修改 .vscode-server/ 存储位置
 
 ```bash
 rm -rf .vscode-server/
 ```
+
+- [修改路径](https://blog.csdn.net/weixin_43301333/article/details/128503260)
 
 ## NER 模型学习参考
 

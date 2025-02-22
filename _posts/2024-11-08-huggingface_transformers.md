@@ -14,7 +14,7 @@ description: transformers
 
 - 将数据预处理、模型调用、结果后处理三部分组装成的流水线，使我们能够直接输入文本便能获得最终的答案
 
-![参考图片](assets/post_img/2024-11-08-huggingface_transformers_01.png)
+![参考图片](assets/post_img/2024-11-08-huggingface_transformers/2024-11-08-huggingface_transformers_01.png)
 
 ### 背后做了什么？
 
@@ -224,7 +224,7 @@ tokenizer = AutoTokenizer.from_pretrained("./xxxx", trust_remote_code=True)
 
     - 可以有选择性的告诉模型要使用哪些上下文
 
-    ![参考图片](assets/post_img/2024-11-08-huggingface_transformers_02.png)
+    ![参考图片](assets/post_img/2024-11-08-huggingface_transformers/2024-11-08-huggingface_transformers_02.png)
 
 - `Model Head`
 

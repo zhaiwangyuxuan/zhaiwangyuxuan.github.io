@@ -238,11 +238,11 @@ plt.savefig('聚类结果.png')
 plt.show() ##显示图片
 ```
 
-![图一](assets/post_img/2024-12-23-sklearn_1.png)
+![图一](assets/post_img/2024-12-22-scikit-learn/2024-12-22-scikit-learn_01.png)
 
 ### 聚类结果评价
 
-![图二](assets/post_img/2024-12-23-sklearn_2.png)
+![图二](assets/post_img/2024-12-22-scikit-learn/2024-12-22-scikit-learn_02.png)
 
 - 其中前4种方法均需要真实值的配合才能够评价聚类算法的优劣，后2种则不需要真实值的配合。
 
@@ -281,10 +281,10 @@ plt.savefig('xxxx')
 plt.show() ##显示图片
 ```
 
-![图三](assets/post_img/2024-12-23-sklearn_3.png)
+![图三](assets/post_img/2024-12-22-scikit-learn/2024-12-22-scikit-learn_03.png)
 
 ### 回归结果评价
 
-![图四](assets/post_img/2024-12-23-sklearn_4.png)
+![图四](assets/post_img/2024-12-22-scikit-learn/2024-12-22-scikit-learn_04.png)
 
 - `(target, y_pred)` 真实值 预测值

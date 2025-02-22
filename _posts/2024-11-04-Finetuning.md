@@ -37,7 +37,7 @@ description: 之后整理
 
     - [论文地址](https://arxiv.org/abs/2104.08691)
 
-    ![论文图片](assets/post_img/2024-11-04-Finetuning-ChatGLM_01.png)
+![论文图片](assets/post_img/2024-11-04-Finetuning/2024-11-04-Finetuning-ChatGLM_01.png)
 
 ### P-Tuning v1
 
@@ -62,10 +62,3 @@ description: 之后整理
 ### QLoRA
 
     - 后面写
-
-
-## 例子
-
-### 哎我有点红温了 先拿个有明确教程的LLM练手 并且用LoRA 后面用MLLM
-
-- [Datawhale_Qwen2-7B-Instruct](https://github.com/datawhalechina/self-llm/blob/master/models/Qwen2/05-Qwen2-7B-Instruct%20Lora%20%E5%BE%AE%E8%B0%83.md)

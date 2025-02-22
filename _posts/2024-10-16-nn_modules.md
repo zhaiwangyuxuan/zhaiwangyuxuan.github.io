@@ -94,7 +94,7 @@ tensor([[[[ 1,  3,  4, 10,  8],
 
 - 参考图片
 
-![卷积层](assets/post_img/2024-10-16-nn_modules_01.png)
+![卷积层](assets/post_img/2024-10-16-nn_modules/2024-10-16-nn_modules_01.png)
 
 ### 神经网络 - 卷积层02
 - 以 `torch.nn.Conv2d` 这个类为例
@@ -177,7 +177,7 @@ output = test_maxpool(input)
 - **最大池化的意义：在保障数据质量的情况下，减少数据参数**
 
 - 参考图片
-![最大池化](assets/post_img/2024-10-16-nn_modules_02.png)
+![最大池化](assets/post_img/2024-10-16-nn_modules/2024-10-16-nn_modules_02.png)
 
 
 ### 神经网络 - 非线性激活
@@ -213,7 +213,7 @@ output = model(input)
 - Recurrent Layers -> 主要用于字体识别
 - Linear Layers -> 一般通过线性层：
                     直接看图，注意，参数中的 `bias` 代表线性方程中的 `b` 要不要有，默认有的;
-                    ![参考图片](assets/post_img/2024-10-16-nn_modules_03.png)
+                    ![参考图片](assets/post_img/2024-10-16-nn_modules/2024-10-16-nn_modules_03.png)
 - Dropout Layers -> During training, randomly zeroes some of the elements 
                     of the input tensor with probability p 
                     (部分输入张量的元素会以p的概率变成0) -> 

@@ -10,7 +10,7 @@ description: AI程设课上教的 matplotlib 与 seaborn
 
 ## `matplotlib` 基础
 
-![图一](assets/post_img/2024-12-22-matplotlib.png)
+![图一](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_01.png)
 
 ### 设置中文
 
@@ -78,7 +78,7 @@ plt.plot(data2, data2 ** 3)
 plt.legend(['y = x', 'y = x^3'])
 ```
 
-![图二](assets/post_img/2024-12-22-matplotlib_2.png)
+![图二](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_02.png)
 
 ### 散点图
 
@@ -96,7 +96,7 @@ plt.legend(['y = x', 'y = x^3'])
 plt.plot(values[:, 0], values[:, 2], color = 'r', linestyle = '--', marker = 'o') # 绘制点线图
 ```
 
-![图三](assets/post_img/2024-12-22-matplotlib_3.png)
+![图三](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_03.png)
 
 ### 直方图
 
@@ -118,7 +118,7 @@ plt.savefig('2017年第一季度各产业生产总值占比饼图')
 plt.show()
 ```
 
-![图四](assets/post_img/2024-12-22-matplotlib_4.png)
+![图四](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_04.png)
 
 ### 箱线图
 
@@ -141,7 +141,7 @@ plt.title('2000-2017各产业国民生产总值箱线图')
 plt.show()
 ```
 
-![图五](assets/post_img/2024-12-22-matplotlib_5.png)
+![图五](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_05.png)
 
 ## `seaborn` 基础
 
@@ -165,7 +165,7 @@ for idx, col in enumerate(numeric_cols):
     sns.histplot(data[col], ax=ax, kde=True)
 ```
 
-![图六](assets/post_img/2024-12-22-matplotlib_6.png)
+![图六](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_06.png)
 
 ### 变量间相关分析
 
@@ -191,4 +191,4 @@ p6 = plt.figure(figsize = (8, 6), dpi = 120)
 sns.heatmap(corr, annot = True, cmap = 'coolwarm', fmt = '.2f', linewidths = 0.5)   
 ```
 
-![图七](assets/post_img/2024-12-22-matplotlib_7.png)
+![图七](assets/post_img/2024-12-22-matplotlib_seaborn/2024-12-22-matplotlib_seaborn_07.png)

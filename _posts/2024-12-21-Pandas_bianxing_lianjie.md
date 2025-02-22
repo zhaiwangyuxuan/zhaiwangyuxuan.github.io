@@ -24,7 +24,7 @@ description: AI程设课上教的 Pandas 变形与连接
 
 - 长表和宽表是针对某个属性而言的。在数据表中，如果某属性以列的形式存在，则称该表是关于这个属性的长表。如果将该属性的各取值作为列索引，则称该表是关于这个属性的宽表
 
-![alt text](assets/post_img/2024-12-21-Pandas.png)
+![参考图片](assets/post_img/2024-12-21-Pandas_bianxing_lianjie/2024-12-21-Pandas_bianxing_lianjie_01.png)
 
 ### 长表变宽表
 
@@ -218,7 +218,7 @@ B	cat	1.0	NaN	1.0	NaN
 
 - 其中，关系连接的方式有左、右、内、外
 
-![如图](assets/post_img/2024-12-22-Pandas.png)
+![如图](assets/post_img/2024-12-21-Pandas_bianxing_lianjie/2024-12-21-Pandas_bianxing_lianjie_02.png)
 
 ### `merge()` 关系连接
 
