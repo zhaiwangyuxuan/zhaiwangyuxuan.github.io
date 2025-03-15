@@ -53,6 +53,14 @@ TMPDIR=xxxxx pip install -r requirements.txt --no-cache-dir
    
    4. 不行的话就用 wheel 下的方式下载
 
+- 无匹配版本
+ 
+   1. 处理：Python 版本不对
+
+```bash
+ERROR: Could not find a version that satisfies the requirement
+```
+
 ## GitHub Desktop GPG
 
 ```bash
