@@ -123,6 +123,27 @@ tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in nltk.sent_to
 ne_annotated_sentences = sn.tag_sents(tokenized_sentences)  
 ```
 
+### Stanford NER
+
+```bash
+pip install stanza
+```
+
+```python
+import stanza
+
+nlp = stanza.Pipeline(lang='en', processors='tokenize,ner')
+doc = nlp("Chris Manning teaches at Stanford University. He lives in the Bay Area.")
+print(*[f'entity: {ent.text}\ttype: {ent.type}' for ent in doc.ents], sep='\n')
+```
+
+- 克服网络问题
+
+- 参考[该链接](https://blog.csdn.net/gz927cool/article/details/121868829)
+
+1. json 文件前往 [此链接](https://github.com/stanfordnlp/stanza-resources) 下载
+2. 模型 文件前往 [此链接](https://huggingface.co/stanfordnlp/stanza-en) 下载
+
 ## 微调大模型
 
 - [用抱抱脸transformers微调ViT](https://huggingface.co/blog/fine-tune-vit)
