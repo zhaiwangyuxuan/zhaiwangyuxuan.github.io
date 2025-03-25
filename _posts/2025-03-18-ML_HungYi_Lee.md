@@ -6,15 +6,15 @@ tags: [llm/mllm, hung-yi lee]     # TAG names should always be lowercase
 description: 【機器學習2021】Hung-Yi Lee
 ---
 
-# 自注意力机制（上）
+## 自注意力机制（上）
 
 - [课程链接](https://www.youtube.com/watch?v=hYdO9CscNes)
 
 - Vector set as input
 
-## 表示办法
+### 表示办法
 
-### 独热编码 one-hot Encoding
+#### 独热编码 one-hot Encoding
 
 - 缺点：缺失了语义信息
 
@@ -25,11 +25,11 @@ cat = [0, 0, 1, 0 ...]
 dog = [0, 0, 0, 1 ...]
 ```
 
-### 词嵌入 Word Embedding
+#### 词嵌入 Word Embedding
 
 - 具有相似语义信息的词汇在坐标系上更接近
 
-## 输入
+### 输入
 
 - 将每个词提取出来，当作一个 vector，这个 vector 也被称之为 frame
 
@@ -44,9 +44,9 @@ O = [0, 0, 1, 0 ...] # 氧
 ......
 ```
 
-## 输出
+### 输出
 
-### 各类任务概述
+#### 各类任务概述
 
 - 如果每个向量都有一个标签，那么模型就是输出标签，输入输出长度相同（如输入四个向量，输出四个标签），可化为 classification 或 regression 问题
 
@@ -64,7 +64,7 @@ O = [0, 0, 1, 0 ...] # 氧
 
     - 例：Translation
 
-### Self-attention 机制
+#### Self-attention 机制
 
 - 第一种任务也称之为 Sequence Labeling
 
@@ -96,11 +96,11 @@ O = [0, 0, 1, 0 ...] # 氧
     ![Self-attention](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_04.png)
 
 
-# 自注意力机制（下）
+## 自注意力机制（下）
 
 - [课程链接](https://www.youtube.com/watch?v=gmsMY5kc-zw)
 
-## 自注意力机制 - 线性代数视角
+### 自注意力机制 - 线性代数视角
 
 - 不妨使用线性代数去看待 self-attention
 
@@ -112,13 +112,13 @@ O = [0, 0, 1, 0 ...] # 氧
 
 - ![概览与实际需要学习的参数](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_07.png)
 
-### Multi-head Self-attention 多头注意力机制
+#### Multi-head Self-attention 多头注意力机制
 
 - 多头注意力机制就是设计 N 个矩阵，不同的矩阵负责不同种类的相关性，最后拼接起来
 
 - ![多头注意力机制](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_08.png)
 
-## Positional Encoding 位置编码
+### Positional Encoding 位置编码
 
 - 我们发现，自注意力机制中缺失了位置信息。如果对你的任务而言，位置信息很重要，我们可以做到将位置信息编码进去
 
@@ -126,7 +126,7 @@ O = [0, 0, 1, 0 ...] # 氧
 
 - 可以 hand-crafted，也可以参考 [如何更好地设定 positional encoding](https://arxiv.org/abs/2003.09229)：整个问题尚待研究，不必纠结
 
-## 应用
+### 应用
 
 - [Attention is all you need](https://arxiv.org/abs/1706.03762)
 
@@ -140,7 +140,7 @@ O = [0, 0, 1, 0 ...] # 氧
 
 - self-attention for graph - GNN 的一种：每个结点只用关注相连的结点即可，参考邻接矩阵
 
-## self-attention v.s. CNN
+### self-attention v.s. CNN
 
 - CNN 可以看作是一种简化版的 self-attention，因为它只关注一小部分范围的图像
 
@@ -152,7 +152,7 @@ O = [0, 0, 1, 0 ...] # 氧
 
 - [不同数据量下 self-attention 与 CNN 的性能比较](https://arxiv.org/abs/2010.11929)
 
-## self-attention v.s. RNN
+### self-attention v.s. RNN
 
 - RNN 中，后面一个 vector 为了做到考虑前面的 vector，必须把前面的 vector 存到 memory 中
 
@@ -160,10 +160,60 @@ O = [0, 0, 1, 0 ...] # 氧
 
 - [self-attention 与 RNN 关系](https://arxiv.org/abs/2006.16236)
 
-## 其它
+### 其它
 
 - [研究高效 transformer 的 benchmark](https://arxiv.org/abs/2011.04006)
 
 - [高效 transformer 综述](https://arxiv.org/abs/2009.06732)
 
-# Transformer (上)
+## Transformer (上) + (下)
+
+### 是什么
+
+- sequence to sequence (seq2seq) 模型
+
+- input a sequence, output a sequence
+
+- 由模型 **自行决定** 输出长度
+
+### 应用
+
+- speech recognition, machine translation, speech translation (for language without text) ...
+
+- Text-To-Speech (TTS) Synthesis：文本的语音合成
+
+- Seq2seq for Chatbot：文字本身可以被看作是一个 vector sequence  -> Natural Language Processing (NLP) 领域
+
+- QA 也可以做，[远古参考文献 01](https://arxiv.org/abs/1806.08730)，[远古参考文献 02](https://arxiv.org/abs/1909.03329)
+
+- syntactic parsing：句法分析（分析词性等），远古时期有人把语法当作一种语言，把上古时期人们用来翻译的方式套在上面，[上古神兽时期参考文献](https://arxiv.org/abs/1412.7449)，据说是直接梯度下降训练，就成了（？
+
+- Multi-label Classification：同一目标有多个标签，[参考文献 01](https://arxiv.org/abs/1909.03434)，[参考文献 02](https://arxiv.org/abs/1707.05495)
+
+- Object detection：[参考文献 01](https://arxiv.org/abs/2005.12872)
+
+### 怎么做 Seq2seq
+
+- 通常来说：Input -> Encoder -> Decoder -> Ouput
+
+- 主角：[Transformer](https://arxiv.org/abs/1706.03762)
+
+#### Encoder 部分
+
+- 输入向量，输出向量
+
+- 每个 block 不能被看作是一个 layer，因为 block 里面有很多 layer，以其中一个 block 为例：
+
+    1. 首先是 self-attention 层，采取 residual connection 办法
+
+    2. 接一个 layer normalization 层，需计算平均值与标准差
+
+    3. 输出结果接一个 Fully-connected 层，采取 residual connection 办法
+
+    4. 再接一个 layer normalization 层
+
+- 能不能再优化呢？原论文的 encoder 架构就是最 optimal 的吗？ -> [参考文献 01](https://arxiv.org/abs/2002.04745)，[参考文献 02：为什么不做 Batch Norm](https://arxiv.org/abs/2003.07845)
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_09.png)
+
+#### Decoder 部分
