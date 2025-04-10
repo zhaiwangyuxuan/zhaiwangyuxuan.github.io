@@ -217,3 +217,43 @@ O = [0, 0, 1, 0 ...] # 氧
 - ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_09.png)
 
 #### Decoder 部分
+
+##### Autoregressive
+
+- 将 Encoder 输出的 Seq 输入到 Decoder 里，Decoder 再输出一个 seq
+
+- 存在一个 Begin Of Sentence (BOS)、为一个特殊的 token
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_10.png)
+
+- 不会出现 Error Propagation （一步错，步步错） 吗？
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_11.png)
+
+- 注意到 Masked Self-attention - 不看后面的输入，只关注已有的输入：why？
+
+    - Consider how does decoder work
+
+    - 必须先有上一个字，才能有下一个字
+
+- 还会有 END token，以做到“就输出这么多”
+
+##### Non-Autoregressive (NAT)
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_12.png)
+
+- NAT 如何判断输出长度
+
+    1. Another predictor for output length
+
+    2. Output a very long seq, ignore tokens after END
+
+- 优点：
+
+    1. parallel（与 AT 相比，AT 要生成 100 个字的句子，就需要进行 100 次 decode）
+    
+    2. controllable output length 
+
+- 缺点：
+
+    - NAT is usually worse than AT
