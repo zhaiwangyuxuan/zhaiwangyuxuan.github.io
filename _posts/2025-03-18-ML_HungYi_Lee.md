@@ -217,3 +217,105 @@ O = [0, 0, 1, 0 ...] # 氧
 - ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_09.png)
 
 #### Decoder 部分
+
+##### Autoregressive
+
+- 将 Encoder 输出的 Seq 输入到 Decoder 里，Decoder 再输出一个 seq
+
+- 存在一个 Begin Of Sentence (BOS)、为一个特殊的 token
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_10.png)
+
+- 不会出现 Error Propagation （一步错，步步错） 吗？
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_11.png)
+
+- 注意到 Masked Self-attention - 不看后面的输入，只关注已有的输入：why？
+
+    - Consider how does decoder work
+
+    - 必须先有上一个字，才能有下一个字
+
+- 还会有 END token，以做到“就输出这么多”
+
+##### Non-Autoregressive (NAT)
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_12.png)
+
+- NAT 如何判断输出长度
+
+    1. Another predictor for output length
+
+    2. Output a very long seq, ignore tokens after END
+
+- 优点：
+
+    1. parallel（与 AT 相比，AT 要生成 100 个字的句子，就需要进行 100 次 decode）
+    
+    2. controllable output length 
+
+- 缺点：
+
+    - NAT is usually worse than AT
+
+#### Encoder - Decode 之间怎么连接
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_13.png)
+
+- Cross Attention：Decoder 产生的 q，从 Encoder 中提取特征
+
+- ![参考图片](assets/post_img/2025-03-18-ML_HungYi_Lee/2025-03-18-ML_HungYi_Lee_14.png)
+
+- 拓展：不同的 Cross Attention 办法，[Rethinking and Improving Natural Language Generation with Layer-Wise Multi-View Decoding](https://arxiv.org/abs/2005.08081)
+
+#### 模型训练
+
+- 目的：Minimize cross entropy（注意，最后还会输出 END 的 one-hot vector）
+
+- **Teacher Forcing**：using the ground truth as input
+
+    - 给定“机器学”，就应该输出“习”；
+
+    - 给定“机器学习”，就应该输出“END”。
+
+    - 但在真正用的时候，显然 Decoder 看到的是自己的输入，而非 ground truth 的输入，中间存在 Mimatch
+
+- **Copy Mechanism**：从输入中复制一些东西输出
+
+    - 输入：你好，我是 Hewkick。
+
+    - 输出：Hewkick 你好，很高兴认识你。
+
+    - 显然模型不好理解 Hewkick 是什么，但知道是名字，复制到输出中，就足够了。
+
+    - 应用于摘要之中 - Pointer Network - [Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368)
+
+- **Guided Attention**：要求机器有固定的方式
+
+    - 例如在语音合成中，强行让机器从左到右去 Attention。
+
+- **Beam Search**：不搞纯粹贪心算法
+
+    - 暴力搜索肯定不行；
+
+    - Beam Search 即可，但有时候有用，有时候没用。需要根据任务来看。
+
+    - 没用的例子，对于有一定创造力的任务（如续写文章），找出分数最高的路不一定好，[The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751)
+
+- 评估方法用什么？
+
+    - 我们用 Cross Entropy 训练（希望最小化），却用 BLEU score 去评估（希望最大化）；
+
+    - 使用 BLEU score 去训练？有些难；
+
+    - 强化学习硬 Train 一发：When you don't know how to optimize, just use reinforcement learning (RL)! [Flow-based network analysis of the Caenorhabditis elegans connectome](https://arxiv.org/abs/1511.0673)
+
+- **Scheduled Sampling**：在训练的时候给 Decoder 一些错误的东西，反而可以让 Decoder 训练得更好！
+
+    - 但是会伤害到 Transformer 平行化的能力；
+
+    - Original Scheduled Sampling, [Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks](https://arxiv.org/abs/1506.03099)
+    
+    - Scheduled Sampling for Transformer, [Scheduled Sampling for Transformers](https://arxiv.org/abs/1906.07651)
+    
+    - Parallel Scheduled Sampling, [Parallel Scheduled Sampling](https://arxiv.org/abs/1906.04331)
