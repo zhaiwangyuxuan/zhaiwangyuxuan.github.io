@@ -142,8 +142,8 @@ for data in dataloader:
 
 ### 神经网络 - 最大池化
 
-- `MaxPool` 也叫做“下采样”
-- `MaxUnpool` 也叫做“上采样”
+- `MaxPool` 也叫做“下采样” - 是减少数据点数量的过程，其目的通常是降低数据的分辨率或维度
+- `MaxUnpool` 也叫做“上采样” - 是增加数据点数量的过程，其主要目的是提高数据的分辨率
 - `ceil_mode` 是否对元素数量不够 `kernel_size` 数量的区域进行最大池化
 
 ```python

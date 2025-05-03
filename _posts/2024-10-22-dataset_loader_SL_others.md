@@ -35,6 +35,8 @@ dataset = torchvision.datasets.CIFAR10("tmp-tudui/CIFAR10", train=False,
 ### 使用自己的数据集
 
 ```python
+from torch.utils.data import Dataset
+
 class myData(Dataset):
     
     def __init__(self, ...):
@@ -42,7 +44,7 @@ class myData(Dataset):
         # 反正自己处理一下
 
     def __getitem__(self, index):
-        
+
         # 自己处理一下 返回图片与标签
         return img, label
     
@@ -60,6 +62,8 @@ train_set = myData(root_dir, train_img_dir, train_label_dir,
 
 > 自定义类必须写`__init__`、`__getitem__`与`__len__`办法
 {: .prompt-warning }
+
+- 当传参使用 mydata[index] -> mydata._getitem_(index)
 
 ## DataLoader 类
 

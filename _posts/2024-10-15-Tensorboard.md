@@ -10,6 +10,8 @@ description: Tensorboard怎么用
 - 使用教程来自[小土堆pytorch教程](https://www.bilibili.com/video/BV1hE411t7RN)
 - 配置环境：torch2.0.1+cu118与对应torchaudio和torchvision
 
+- 作用：创建文件，并保存数据集到文件。利用这种方法可以在该训练循环过程中，将数据写入文件中，而不会延缓训练的速度
+
 ## 库与端口
 
 ### 引入库
@@ -32,7 +34,7 @@ tensorboard --logdir=logs --port=6007
 tensorboard --logdir=logs --samples_per_plugin=images=10000
 ```
 
-## 测试代码01
+## .add_scalar()
 ```python
 from torch.utils.tensorboard import SummaryWriter # 这是一个类
 writer = SummaryWriter("logs")
@@ -71,7 +73,7 @@ writer.addscalar()
 - 如果想要修改函数图像，必须先**运行修改后的代码**，再输入 `tensorboard --logdir=logs`
 - 如果发现图像很混乱（即同时出现了多种函数图像），那么，去自己的设定的 log_dir 文件夹，删除里面的所有文件，再运行代码，终端输入 `tensorboard --logdir=logs` 即可
 
-## 测试代码02
+## .add_image()
 ```python
 from torch.utils.tensorboard import SummaryWriter # 这是一个类
 from PIL import Image
@@ -104,4 +106,20 @@ writer.add_image()
 # img_tensor (torch.Tensor, numpy.ndarray, or string/blobname): 输入图像数据
 # global_step (int): 第几步
 # dataformats (str): Image data format specification of the form: CHW, HWC, HW, WH, etc. 指定图片的通道数Channel、高度Height、宽度Width
+```
+
+### .add_audio()
+
+```python
+file1 = SummaryWriter("log_wav")
+flag = 0
+
+for data in mydata:
+    waveform, sr, name = data
+    file1.add_audio(tag = f"{name}", snd_tensor = waveform, sample_rate = sr)
+    flag += 1
+    if flag == 8:
+        exit()
+
+file1.close()
 ```
