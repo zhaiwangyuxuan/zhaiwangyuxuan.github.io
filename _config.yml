@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: Wangyuxuan zhai # the main title
 
-tagline: This is my own blog, which is ONLY used for academic matters. Click "ABOUT" below to get more information. # it will display as the subtitle
+tagline: 做长期主义的事，做理想主义的事。Do things that adhere to long-termism and do things that are driven by idealism.  # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Hello world!!!
@@ -30,8 +30,8 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: ZhaiWangyuxuan
-  email: 23281028@bjtu.edu.cn # change to your email address
+  name: Zhai Wangyuxuan
+  email: zhaiwangyuxuan@bjtu.edu.cn # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/zhaiwangyuxuan # change to your GitHub homepage
