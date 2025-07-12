@@ -69,6 +69,26 @@ git config --global user.signingkey <GPG_KEY_ID>
 git config --global commit.gpgsign true
 ```
 
+## screen 关电脑服务器继续跑
+
+```bash
+创建：screen -S xxx
+
+查看有多少会话：screen -ls
+
+恢复：screen -r xxx.xxx
+
+如果不能恢复：先screen -d xxx.xxx
+
+再screen -r xxx.xxx
+
+删除 screen -S xxx.xxx -X quit
+
+完成以上步骤，使用ctrl+a+d退出screen，然后再×掉cmd窗口就可以
+
+Detached意思是当前screen没有被打开，相对的是Attached表示当前screen正处在打开状态。
+```
+
 ## 增加github克隆成功概率
 
 - 用 ghproxy 代理进行 git clone
