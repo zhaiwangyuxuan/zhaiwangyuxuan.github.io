@@ -1,8 +1,3 @@
 
-- **Dean's List (All Semester)** at University of Minnesota Twin Cities.
-
-- Special Corporate Scholarships, 2023. **(1/30)**
-
-- School Special Academic Scholarship, 2023.**(1%)**
-
-- First-Class Academic Scholarship, 2022.**(8%)**
+- 北京交通大学 2023-2024 年度 国家奖学金
+- National Scholarship, Beijing Jiaotong University, 2023-2024 Academic Year
