@@ -5,9 +5,9 @@
 <!-- [![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%231E2A2A?style=for-the-badge&logo=zhihu&logoColor=blue)](https://www.zhihu.com/people/ycr222/posts) -->
 
 
-#### News
+<!-- #### News
 
-- None
+- None -->
 
 <!-- * <strong style="color:red;"><strong>I’m actively looking for Machine Learning System and O1/MLLM/LLM Industrial/Research Opportunity.</strong></strong> <strong><strong>This includes</strong></strong> 
     * Train more powerful reasoning models like [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) and [QwQ](https://huggingface.co/Qwen/QwQ-32B-Preview). 
@@ -19,30 +19,25 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 #### Biography
 
-- None
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展自然语言处理（NLP）与地理领域交叉的相关研究 。
 
-<!-- My name is Jerry Yin. I got my bachelor Degree in computer science with Distinction at University of Minnesota Twin Cities in December 2024, supervised by Prof. [Zirui Liu](https://zirui-ray-liu.github.io/) and [Jiayi Yuan](https://jy-yuan.github.io/) (Ph.D. Candidate). In the summer of 2023, I visited [TsinghuaNLP](https://github.com/thunlp) and conducted research under Prof. [Zhiyuan Liu](https://nlp.csai.tsinghua.edu.cn/~lzy/), where I received invaluable mentorship from [Weilin Zhao](https://brawny-college-5b2.notion.site/Weilin-Zhao-11d20b7deb8280388213d5f5ed072992) (Ph.D. Candidate) and [Xu Han](https://thucsthanxu13.github.io/) (Research Assistant Professor), for which I am deeply grateful.
+在2025年寒假期间，我参加了清华 AIR 的冬令营。在[李鹏](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ)教授的指导下，我有幸得到了清华 AIR [王晓龙](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ)师兄以及北大软微[康兆璐](https://openreview.net/profile?id=~Zhaolu_Kang2)师姐的宝贵指导 。
 
-I have experience in NLP and computer systems(both architecture and high performance machine learning systems), along with extensive industry research internship experience. This includes:
+当下，我仍在持续深入地进行NLP与地理领域的相关研究，努力探索该交叉领域更多的可能性与应用前景 。
 
-* Participating in the pretraining of the Yi-Lightning model at 01.AI.
-* Contributing to ML Infra of the pretraining of the foundation model at ModelBest (with TsinghuaNLP).
-* Participating in the finetuning of the CodeLLM [Raccoon](https://raccoon.sensetime.com/code) (Copilot-like) at SenseTime (with CUHK MMLab). -->
+My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at the intersection of Natural Language Processing (NLP) and the field of geography.
+
+During the winter vacation of 2025, I participated in the winter camp of Tsinghua AIR. Under the guidance of Professor [Li Peng](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ), I was fortunate enough to receive valuable guidance from [Wang Xiaolong](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ) of Tsinghua AIR and [Kang Zhaolu]((https://openreview.net/profile?id=~Zhaolu_Kang2)) of Peking University Software and Microelectronics School.
+
+At present, I am still continuously and deeply engaged in the research related to the NLP - geography field, striving to explore more possibilities and application prospects in this interdisciplinary field. 
 
 #### Research Interests
 
-None
+<!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-<!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes:
-
-1. <strong><strong>Machine Learning System</strong></strong> 
-    * Training: Design more effective training system and algorithms, example includes [BMTrain](https://github.com/OpenBMB/BMTrain).
-    * Parameter Efficient Fine Tuning (PEFT): Improve LoRA-like architecture and low bit model compression. example includes [IAPT](https://aclanthology.org/2024.acl-long.771.pdf). 
-    * Long context inference: example includes [Cross Layer Attention](https://github.com/JerryYin777/Cross-Layer-Attention).
-2. <strong><strong>LLM & LLM applications</strong></strong> 
-    * CodeLLM
-    * Foundation LLM (Yi-lightning)
-    * RAG (GraphRAG): Examples includes [PaperHelper](https://github.com/JerryYin777/PaperHelper). -->
+- 目前，我的主要研究领域是 <strong><strong>NLP + Ggeography</strong></strong>；
+- Currently, my main research area is **NLP + Geography**.
+<!-- 2. 同时，我个人还对<strong><strong>MIR (Music Information Retrieval)</strong></strong>有所涉猎 -->
 
 #### Education
 
@@ -60,9 +55,9 @@ None
 📍 **Beijing Jiaotong University**  
 🎓 **Undergraduate Student in Artificial Intelligence, School of Computer Science**
 
-#### Misc
+<!-- #### Misc
 
-- None
+- None -->
 
 <!-- * Before transferring to the University of Minnesota, I studied at Nanchang University, majoring in Artificial Intelligence in a top-tier class with a School Academic Special Scholarship. I was the leader of Nanchang University Supercomputer Cluster Team ([NCUSCC](https://ncuscc.github.io/)) Leader, with experience of ASC22 and SC23(IndySCC). 
 
@@ -72,7 +67,7 @@ None
 
 #### Contact<p id="contact-info"></p>
 
-- None
+<!-- - None -->
 
 <!-- * </strong></strong>I am very enthusiastic about discussing academic issues or any interesting project-related topics! </strong></strong> If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time. 
 
