@@ -17,35 +17,33 @@
 If you need a reliable teammate who is familiar with <strong style="color:red;"><strong>both NLP and computer systems </strong></strong> with <strong style="color:red;"><strong>extensive industry experiences</strong></strong>, feel free to <a href="#contact-info">Contact Me</a>! -->
 
 
-#### Biography
+#### 自我介绍 Biography
 
-我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展自然语言处理（NLP）与地理领域交叉的相关研究 。
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展 LLM 与地理领域交叉的相关研究 。
 
 在2025年寒假期间，我参加了清华 AIR 的冬令营。在[李鹏](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ)教授的指导下，我有幸得到了清华 AIR [王晓龙](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ)师兄以及北大软微[康兆璐](https://openreview.net/profile?id=~Zhaolu_Kang2)师姐的宝贵指导 。
 
-当下，我仍在持续深入地进行NLP与地理领域的相关研究，努力探索该交叉领域更多的可能性与应用前景 。
+当下，我仍在持续深入地进行 LLM 与地理领域的相关研究，努力探索该交叉领域更多的可能性与应用前景 。
 
-My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at the intersection of Natural Language Processing (NLP) and the field of geography.
+My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at the intersection of LLM and the field of geography.
 
 During the winter vacation of 2025, I participated in the winter camp of Tsinghua AIR. Under the guidance of Professor [Li Peng](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ), I was fortunate enough to receive valuable guidance from [Wang Xiaolong](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ) of Tsinghua AIR and [Kang Zhaolu]((https://openreview.net/profile?id=~Zhaolu_Kang2)) of Peking University Software and Microelectronics School.
 
-At present, I am still continuously and deeply engaged in the research related to the NLP - geography field, striving to explore more possibilities and application prospects in this interdisciplinary field. 
+At present, I am still continuously and deeply engaged in the research related to the LLM - geography field, striving to explore more possibilities and application prospects in this interdisciplinary field. 
 
-#### Research Interests
+#### 研究兴趣 Research Interests
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong>NLP + Ggeography</strong></strong>；
-- Currently, my main research area is **NLP + Geography**.
-<!-- 2. 同时，我个人还对<strong><strong>MIR (Music Information Retrieval)</strong></strong>有所涉猎 -->
+- 目前，我的主要研究领域是 <strong><strong>LLM + Ggeography</strong></strong>；
+- Currently, my main research area is **LLM + Geography**.
 
-#### Education
+---
 
-<!-- 🕒 **2023.12 - 2024.12**  
-📍 **University of Minnesota Twin Cities**  
-🎓 **B.A. in Computer Science with Distinction**
+- 同时，我个人还对<strong><strong>MIR (Music Information Retrieval)</strong></strong>🎶感兴趣。
+- Meanwhile, I am also interested in <strong><strong>MIR (Music Information Retrieval)</strong></strong>🎶.
 
---- -->
+#### 教育经历 Education
 
 🕒 **2023 年 9 月 - 至今**  
 📍 **北京交通大学**  
@@ -55,22 +53,18 @@ At present, I am still continuously and deeply engaged in the research related t
 📍 **Beijing Jiaotong University**  
 🎓 **Undergraduate Student in Artificial Intelligence, School of Computer Science**
 
-<!-- #### Misc
+#### 杂项 Misc
 
-- None -->
+- 除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，曾在中央音乐学院参加过业余考级。我也会制作电子音乐🎵，自娱自乐足矣。
 
-<!-- * Before transferring to the University of Minnesota, I studied at Nanchang University, majoring in Artificial Intelligence in a top-tier class with a School Academic Special Scholarship. I was the leader of Nanchang University Supercomputer Cluster Team ([NCUSCC](https://ncuscc.github.io/)) Leader, with experience of ASC22 and SC23(IndySCC). 
+- 我最喜欢的游戏类型是音乐游戏，目前正热衷于街机音游《舞萌 DX》。
 
-* I am passionate about open source and firmly believe in its potential to disseminate knowledge widely, leverage technology to lead innovation to the world and contribute to the advancement of human society. I am proud to have garnered over **4k stars** and acquired over **370 followers** on [GitHub](https://github.com/JerryYin777). I occasionally share my explorations in the machine learning system and LLM field on [![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%231E2A2A?style=for-the-badge&logo=zhihu&logoColor=blue)](https://www.zhihu.com/people/ycr222/posts) in Mandarin.
+- Beyond my research, I am enthusiastic about music. I play the accordion🪗 and have taken amateur grading exams at the Central Conservatory of Music. I also produce electronic music🎵, but only at an amateur level, just for my own enjoyment.
 
-* I love league of legends and valorant games! -->
+- My favorite genre of games is rhythm games. I’m currently obsessed with the rhythm game *Maimai DX*.
 
-#### Contact<p id="contact-info"></p>
+#### 联系我 Contact<p id="contact-info"></p>
 
-<!-- - None -->
+- If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰
 
-<!-- * </strong></strong>I am very enthusiastic about discussing academic issues or any interesting project-related topics! </strong></strong> If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time. 
-
-* If you're an undergraduate student feeling uncertain, especially from a diverse background, and hope to gain some learning experiences from me, I also warmly welcome that! -->
-
-* ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
+- ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
