@@ -5,9 +5,15 @@
 <!-- [![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%231E2A2A?style=for-the-badge&logo=zhihu&logoColor=blue)](https://www.zhihu.com/people/ycr222/posts) -->
 
 
-<!-- #### News
+#### News
 
-- None -->
+
+* 🎉 One of my papers, [MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models](https://arxiv.org/abs/2506.17046), has been accepted by the **EMNLP 2025 Main Conference**.
+
+* 🎉 我的论文 [MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models](https://arxiv.org/abs/2506.17046) 已被 **2025年EMNLP主会** 录用。
+
+<!-- * <strong><strong> One of my papers 'MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models.' have been accepted by EMNLP 2025 Main Conference </strong></strong> 
+* <strong><strong> 我的一篇论文 'MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models.' 已被 2025 年 EMNLP 主会录用 </strong></strong>  -->
 
 <!-- * <strong style="color:red;"><strong>I’m actively looking for Machine Learning System and O1/MLLM/LLM Industrial/Research Opportunity.</strong></strong> <strong><strong>This includes</strong></strong> 
     * Train more powerful reasoning models like [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) and [QwQ](https://huggingface.co/Qwen/QwQ-32B-Preview). 
@@ -23,24 +29,20 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 在2025年寒假期间，我参加了清华 AIR 的冬令营。在[李鹏](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ)教授的指导下，我有幸得到了清华 AIR [王晓龙](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ)师兄以及北大软微[康兆璐](https://openreview.net/profile?id=~Zhaolu_Kang2)师姐的宝贵指导 。
 
-当下，我仍在持续深入地进行 LLM 与地理领域的相关研究，努力探索该交叉领域更多的可能性与应用前景 。
-
 My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at the intersection of LLM and the field of geography.
 
 During the winter vacation of 2025, I participated in the winter camp of Tsinghua AIR. Under the guidance of Professor [Li Peng](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ), I was fortunate enough to receive valuable guidance from [Wang Xiaolong](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ) of Tsinghua AIR and [Kang Zhaolu]((https://openreview.net/profile?id=~Zhaolu_Kang2)) of Peking University Software and Microelectronics School.
-
-At present, I am still continuously and deeply engaged in the research related to the LLM - geography field, striving to explore more possibilities and application prospects in this interdisciplinary field. 
 
 #### 研究兴趣 Research Interests
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong>LLM + Ggeography</strong></strong>；
+- 目前，我的主要研究领域是 <strong><strong> LLM + Ggeography </strong></strong>；
 - Currently, my main research area is **LLM + Geography**.
 
 ---
 
-- 同时，我个人还对<strong><strong>MIR (Music Information Retrieval)</strong></strong>🎶感兴趣。
+- 同时，我个人还对<strong><strong> MIR (Music Information Retrieval) </strong></strong>🎶感兴趣。
 - Meanwhile, I am also interested in <strong><strong>MIR (Music Information Retrieval)</strong></strong>🎶.
 
 #### 教育经历 Education

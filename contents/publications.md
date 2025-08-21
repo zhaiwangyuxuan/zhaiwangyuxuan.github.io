@@ -7,7 +7,7 @@ Please refer to my [Google Scholar](https://scholar.google.com/citations?user=Kt
 
 ### 共同一作论文 Co-First Author Paper
 
-- *X. Wang, Z. Kang, <strong><strong>W. Zhai</strong></strong>, X. Lou, Y. Lai, Z. Wang, Y. Wang, K. Huang, Y. Wang, P. Li, Y. Liu. (2025). MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models. arXiv Preprint.*[[Paper]](https://arxiv.org/abs/2506.17046)
+- *X. Wang, Z. Kang, <strong><strong>W. Zhai</strong></strong>, X. Lou, Y. Lai, Z. Wang, Y. Wang, K. Huang, Y. Wang, P. Li, Y. Liu. (2025). MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models. <strong><strong>EMNLP 2025 Main Conference</strong></strong>.* [[Paper]](https://arxiv.org/abs/2506.17046)
 
 ### 其他论文 Other Paper
 
