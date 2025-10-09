@@ -37,8 +37,8 @@ During the winter vacation of 2025, I participated in the winter camp of Tsinghu
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong> LLM + Ggeography </strong></strong>；
-- Currently, my main research area is **LLM + Geography**.
+- 目前，我的主要研究领域是 <strong><strong> LLM / Agent  </strong></strong>；
+- Currently, my main research area is **LLM / Agent**.
 
 ---
 
