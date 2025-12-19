@@ -25,11 +25,11 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 #### 自我介绍 Biography
 
-我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展 LLM 与地理领域交叉的相关研究 。
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展强化学习的相关研究 。
 
 在2025年寒假期间，我参加了清华 AIR 的冬令营。在[李鹏](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ)教授的指导下，我有幸得到了清华 AIR [王晓龙](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ)师兄以及北大软微[康兆璐](https://openreview.net/profile?id=~Zhaolu_Kang2)师姐的宝贵指导 。
 
-My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at the intersection of LLM and the field of geography.
+My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at Reinforcement Learning.
 
 During the winter vacation of 2025, I participated in the winter camp of Tsinghua AIR. Under the guidance of Professor [Li Peng](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ), I was fortunate enough to receive valuable guidance from [Wang Xiaolong](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ) of Tsinghua AIR and [Kang Zhaolu]((https://openreview.net/profile?id=~Zhaolu_Kang2)) of Peking University Software and Microelectronics School.
 
@@ -37,13 +37,13 @@ During the winter vacation of 2025, I participated in the winter camp of Tsinghu
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong> LLM / Agent  </strong></strong>；
-- Currently, my main research area is **LLM / Agent**.
+- 目前，我的主要研究领域是 <strong><strong> LLM + Reinforcement Learning </strong></strong>；
+- Currently, my main research area is **LLM + Reinforcement Learning**.
 
 ---
 
-- 同时，我个人还对<strong><strong> MIR (Music Information Retrieval) </strong></strong>🎶感兴趣。
-- Meanwhile, I am also interested in <strong><strong>MIR (Music Information Retrieval)</strong></strong>🎶.
+- 同时，我个人还对<strong><strong> 音乐生成模型 </strong></strong>🎶感兴趣。
+- Meanwhile, I am also interested in <strong><strong>Music Generation Model</strong></strong>🎶.
 
 #### 教育经历 Education
 
