@@ -25,25 +25,9 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 #### 自我介绍 Biography
 
-我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我在本校跟随[徐金安](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en)教授和[黄锴宇](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en)老师，开展强化学习的相关研究 。
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备大模型、强化学习以及音乐生成模型方向的专业知识。目前，我正将研究重心转向 **TTS（Text-To-Sound，语音合成）** 与**音乐生成模型**方向。
 
-在2025年寒假期间，我参加了清华 AIR 的冬令营。在[李鹏](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ)教授的指导下，我有幸得到了清华 AIR [王晓龙](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ)师兄以及北大软微[康兆璐](https://openreview.net/profile?id=~Zhaolu_Kang2)师姐的宝贵指导 。
-
-My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, under the supervision of Professor [Xu Jin'an](https://scholar.google.com/citations?user=wMuW0W4AAAAJ&hl=en) and Teacher [Huang Kaiyu](https://scholar.google.com/citations?user=qAp-hS4AAAAJ&hl=en) at my university, I am conducting research at Reinforcement Learning.
-
-During the winter vacation of 2025, I participated in the winter camp of Tsinghua AIR. Under the guidance of Professor [Li Peng](https://scholar.google.com/citations?hl=en&user=hgYzkOQAAAAJ), I was fortunate enough to receive valuable guidance from [Wang Xiaolong](https://scholar.google.com/citations?hl=en&user=p0jarqgAAAAJ) of Tsinghua AIR and [Kang Zhaolu]((https://openreview.net/profile?id=~Zhaolu_Kang2)) of Peking University Software and Microelectronics School.
-
-#### 研究兴趣 Research Interests
-
-<!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
-
-- 目前，我的主要研究领域是 <strong><strong> LLM + Reinforcement Learning </strong></strong>；
-- Currently, my main research area is **LLM + Reinforcement Learning**.
-
----
-
-- 同时，我个人还对<strong><strong> 音乐生成模型 </strong></strong>🎶感兴趣。
-- Meanwhile, I am also interested in <strong><strong>Music Generation Model</strong></strong>🎶.
+My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. I have knowledge in large language models, reinforcement learning, and music generation models. Currently, I am shifting my research focus to **TTS (Text-To-Sound)** and **music generation models**.
 
 #### 教育经历 Education
 
@@ -55,15 +39,28 @@ During the winter vacation of 2025, I participated in the winter camp of Tsinghu
 📍 **Beijing Jiaotong University**  
 🎓 **Undergraduate Student in Artificial Intelligence, School of Computer Science**
 
+#### 研究兴趣 Research Interests
+
+<!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
+
+- 目前，我的主要研究领域是 <strong><strong> 音乐生成模型 </strong></strong>🎶；
+- Currently, my main research area is **Music Generation Model**🎶.
+
+---
+
+- 同时，我还研究过一些关于<strong><strong> 大语言模型 + 强化学习 </strong></strong>的知识。
+- Meanwhile, I have also studied some knowledge related to **LLMs + Reinforcement Learning**.
+
+
 #### 杂项 Misc
 
-- 除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，曾在中央音乐学院参加过业余考级。我也会制作电子音乐🎵，自娱自乐足矣。
+- 除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，曾在中央音乐学院参加过业余考级。我也会制作以 J-core，Gothic Hardcore 为主要类型的电子音乐🎵，自娱自乐足矣。
 
-- 我最喜欢的游戏类型是音乐游戏，目前正热衷于街机音游《舞萌 DX》。
+- 我最喜欢的游戏类型是音乐游戏，我曾热衷于街机音游《舞萌 DX》。
 
-- Beyond my research, I am enthusiastic about music. I play the accordion🪗 and have taken amateur grading exams at the Central Conservatory of Music. I also produce electronic music🎵, but only at an amateur level, just for my own enjoyment.
+- Beyond my research, I am also a music lover. I can play the accordion a little 🪗 and have taken amateur graded exams at the Central Conservatory of Music (CCoM). I also produce electronic music mainly in the styles of J-core and Gothic Hardcore 🎵, just for my own enjoyment.
 
-- My favorite genre of games is rhythm games. I’m currently obsessed with the rhythm game *Maimai DX*.
+- My favorite game genre is rhythm games. I used to be obsessed with the rhythm game *Maimai DX*.
 
 #### 联系我 Contact<p id="contact-info"></p>
 
