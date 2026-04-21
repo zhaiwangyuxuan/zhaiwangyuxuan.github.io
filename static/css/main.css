@@ -62,6 +62,11 @@ section .main-body h4:first-child {
     margin-top: 0;
 }
 
+section .main-body strong,
+section .main-body b {
+    font-weight: 700;
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;

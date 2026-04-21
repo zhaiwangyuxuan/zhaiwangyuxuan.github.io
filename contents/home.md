@@ -33,7 +33,7 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 #### 自我介绍 Biography
 
-我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备一定的大语言模型、强化学习、TTS（Text-To-Speech，语音合成）与音乐生成方向的专业知识。目前，我的一个研究重心为 **TTS** 与**音乐生成**方向。
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备一定的大语言模型、强化学习、TTS（Text-To-Speech，语音合成）与音乐生成方向的专业知识。目前，我的研究重心为 **TTS** 与**音乐生成**方向。
 
 My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. I have knowledge in large language models, reinforcement learning, TTS (Text-To-Speech), and music generation. My current research centers on **TTS and music generation**.
 
@@ -56,7 +56,7 @@ My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Inte
 
 ---
 
-- 同时，我还有过一些关于 **大语言模型 + 强化学习** 的知识。
+- 同时，我还有一些关于 **大语言模型 + 强化学习** 的知识。
 - Meanwhile, I have also studied some knowledge related to **LLMs + Reinforcement Learning**.
 
 
