@@ -6,12 +6,19 @@
 <!-- [![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%231E2A2A?style=for-the-badge&logo=zhihu&logoColor=blue)](https://www.zhihu.com/people/ycr222/posts) -->
 
 
-#### News
+#### 联系我 Contact<p id="contact-info"></p>
+
+- If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰
+
+- ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
+
+
+<!-- #### News
 
 
 * 🎉 One of my papers, [MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models](https://arxiv.org/abs/2506.17046), has been accepted by the **EMNLP 2025 Main Conference**.
 
-* 🎉 我的论文 [MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models](https://arxiv.org/abs/2506.17046) 已被 **2025年EMNLP主会** 录用。
+* 🎉 我的论文 [MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models](https://arxiv.org/abs/2506.17046) 已被 **2025年EMNLP主会** 录用。 -->
 
 <!-- * <strong><strong> One of my papers 'MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models.' have been accepted by EMNLP 2025 Main Conference </strong></strong> 
 * <strong><strong> 我的一篇论文 'MUCAR: Benchmarking Multilingual Cross-Modal Ambiguity Resolution for Multimodal Large Language Models.' 已被 2025 年 EMNLP 主会录用 </strong></strong>  -->
@@ -62,9 +69,3 @@ My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Inte
 - Beyond my research, I am also a music lover. I play a little accordion 🪗 — at the amateur Grade 8 level of the Central Conservatory of Music (CCoM). I also produce electronic music mainly in the styles of J-core and Gothic Hardcore 🎵, just for my own enjoyment.
 
 - My favorite game genre is rhythm games. I used to be obsessed with the rhythm game *Maimai DX*.
-
-#### 联系我 Contact<p id="contact-info"></p>
-
-- If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰
-
-- ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
