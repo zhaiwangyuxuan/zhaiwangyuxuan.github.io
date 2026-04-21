@@ -1,17 +1,9 @@
 
-
 <!-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jerry-yin-a21314292/) -->
-[![Email](https://img.shields.io/badge/Email-%23EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zhaiwangyuxuan@bjtu.edu.cn)
+[![Email](https://img.shields.io/badge/Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zhaiwangyuxuan@bjtu.edu.cn)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zhaiwangyuxuan)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-%230A4D92?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=KtNShhoAAAAJ)
 <!-- [![知乎](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-%231E2A2A?style=for-the-badge&logo=zhihu&logoColor=blue)](https://www.zhihu.com/people/ycr222/posts) -->
-
-
-#### 联系我 Contact<p id="contact-info"></p>
-
-- If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰
-
-- ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
 
 
 #### News
@@ -70,3 +62,9 @@ My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Inte
 - Beyond my research, I am also a music lover. I play a little accordion 🪗 — at the amateur Grade 8 level of the Central Conservatory of Music (CCoM). I also produce electronic music mainly in the styles of J-core and Gothic Hardcore 🎵, just for my own enjoyment.
 
 - My favorite game genre is rhythm games. I used to be obsessed with the rhythm game *Maimai DX*.
+
+#### 联系我 Contact<p id="contact-info"></p>
+
+- If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰
+
+- ✉️ [zhaiwangyuxuan [at] bjtu.edu.cn](mailto:zhaiwangyuxuan@bjtu.edu.cn)
