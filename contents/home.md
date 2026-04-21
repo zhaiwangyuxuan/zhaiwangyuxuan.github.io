@@ -25,9 +25,9 @@ If you need a reliable teammate who is familiar with <strong style="color:red;">
 
 #### 自我介绍 Biography
 
-我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备大模型、强化学习以及音乐生成模型方向的专业知识。目前，我正将研究重心转向 **TTS（Text-To-Sound，语音合成）** 与**音乐生成模型**方向。
+我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备一定的大语言模型、强化学习、TTS（Text-To-Speech，语音合成）与音乐生成方向的专业知识。目前，我的一个研究重心为 **TTS** 与**音乐生成**方向。
 
-My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. I have knowledge in large language models, reinforcement learning, and music generation models. Currently, I am shifting my research focus to **TTS (Text-To-Sound)** and **music generation models**.
+My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. I have knowledge in large language models, reinforcement learning, TTS (Text-To-Speech), and music generation. My current research centers on **TTS and music generation**.
 
 #### 教育经历 Education
 
@@ -43,12 +43,12 @@ My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artifi
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong> 音乐生成模型 </strong></strong>🎶；
-- Currently, my main research area is **Music Generation Model**🎶.
+- 目前，我的主要研究领域是 <strong><strong> TTS 和音乐生成 </strong></strong>🎶；
+- Currently, my main research area is **TTS and Music Generation**🎶.
 
 ---
 
-- 同时，我还研究过一些关于<strong><strong> 大语言模型 + 强化学习 </strong></strong>的知识。
+- 同时，我还有过一些关于<strong><strong> 大语言模型 + 强化学习 </strong></strong>的知识。
 - Meanwhile, I have also studied some knowledge related to **LLMs + Reinforcement Learning**.
 
 
@@ -56,7 +56,7 @@ My name is Zhai Wangyuxuan, and I am an undergraduate student majoring in Artifi
 
 - 除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，曾在中央音乐学院参加过业余考级。我也会制作以 J-core，Gothic Hardcore 为主要类型的电子音乐🎵，自娱自乐足矣。
 
-- 我最喜欢的游戏类型是音乐游戏，我曾热衷于街机音游《舞萌 DX》。
+- 我最喜欢的游戏类型是音乐游戏，我曾热衷于街机音游《舞萌 DX》(国服 w44 水平，打着玩的)。
 
 - Beyond my research, I am also a music lover. I can play the accordion a little 🪗 and have taken amateur graded exams at the Central Conservatory of Music (CCoM). I also produce electronic music mainly in the styles of J-core and Gothic Hardcore 🎵, just for my own enjoyment.
 

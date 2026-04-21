@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <!-- 避免中间缓存保留过旧 HTML；静态资源用下方 ?v= 版本号做强制刷新 -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title id="title"></title>
     <link rel="icon" type="image/x-icon" href="static/assets/Congrui.ico" />
     <!-- Bootstrap icons-->
@@ -20,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/styles.css?v=__VERSION__" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css?v=__VERSION__" rel="stylesheet" />
 
 </head>
 
@@ -158,8 +162,8 @@
     </footer>
 
     <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js?v=__VERSION__"></script>
+    <script type="text/javascript" src="static/js/marked.min.js?v=__VERSION__"></script>
     <script>
         MathJax = {
             tex: { inlineMath: [['$', '$']] }
@@ -168,8 +172,8 @@
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
     <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+    <script type="text/javascript" src="static/js/scripts.js?v=__VERSION__"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js?v=__VERSION__"></script>
 
 
 </body>

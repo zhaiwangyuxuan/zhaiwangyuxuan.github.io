@@ -4,6 +4,7 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1rem;">
     <a href="https://github.com/zwyx-note/zwyx-note.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=zwyx-note&amp;repo=zwyx-note.github.io" alt="zwyx-note.github.io" /></a>
     <a href="https://github.com/zhaiwangyuxuan/mucodec2musicLM"><img src="https://github-readme-stats.vercel.app/api/pin/?username=zhaiwangyuxuan&amp;repo=mucodec2musicLM" alt="mucodec2musicLM" /></a>
+    <a href="https://github.com/zhaiwangyuxuan/BJTU_Qwen3-8B-SFT-RL_technical_report"><img src="https://github-readme-stats.vercel.app/api/pin/?username=zhaiwangyuxuan&amp;repo=BJTU_Qwen3-8B-SFT-RL_technical_report" alt="BJTU_Qwen3-8B-SFT-RL_technical_report" /></a>
     <!-- <a href="https://github.com/OpenBMB/BMTrain"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OpenBMB&amp;repo=BMTrain" alt="Readme Card" /></a> -->
 </div>
 

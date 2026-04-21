@@ -33,6 +33,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Inject cache-busting version (commit SHA)
+        run: |
+          VERSION="${GITHUB_SHA::8}-$(date +%s)"
+          echo "Using VERSION=$VERSION"
+          # 替换 index.html 中所有 __VERSION__ 占位符
+          sed -i "s/__VERSION__/${VERSION}/g" index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

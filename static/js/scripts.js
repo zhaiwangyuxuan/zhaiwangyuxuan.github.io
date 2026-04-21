@@ -30,8 +30,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 
+    // 通过时间戳 + no-store 禁用缓存，保证内容推送后立即可见
+    const bust = '?t=' + Date.now();
+    const noCache = { cache: 'no-store' };
+
     // Yaml
-    fetch(content_dir + config_file)
+    fetch(content_dir + config_file + bust, noCache)
         .then(response => response.text())
         .then(text => {
             const yml = jsyaml.load(text);
@@ -50,7 +54,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Marked
     marked.use({ mangle: false, headerIds: false })
     section_names.forEach((name, idx) => {
-        fetch(content_dir + name + '.md')
+        fetch(content_dir + name + '.md' + bust, noCache)
             .then(response => response.text())
             .then(markdown => {
                 const html = marked.parse(markdown);
