@@ -7,7 +7,7 @@
 
 /* 让中英文正文整体字重略微加粗一点点 */
 body {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .header {
