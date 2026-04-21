@@ -51,12 +51,12 @@ My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Inte
 
 <!-- My current passion revolves around building **EFFICIENT** system solutions to AGI (<strong style="color:red;"><strong>Now I am interested in O1-like models ML Infra</strong></strong>), this includes: -->
 
-- 目前，我的主要研究领域是 <strong><strong> TTS 和音乐生成 </strong></strong>🎶；
+- 目前，我的主要研究领域是 **TTS 和音乐生成**🎶；
 - Currently, my main research area is **TTS and Music Generation**🎶.
 
 ---
 
-- 同时，我还有过一些关于<strong><strong> 大语言模型 + 强化学习 </strong></strong>的知识。
+- 同时，我还有过一些关于 **大语言模型 + 强化学习** 的知识。
 - Meanwhile, I have also studied some knowledge related to **LLMs + Reinforcement Learning**.
 
 

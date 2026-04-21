@@ -53,6 +53,15 @@ section .main-body{
     line-height: 2.4rem;
 }
 
+section .main-body h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+section .main-body h4:first-child {
+    margin-top: 0;
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
