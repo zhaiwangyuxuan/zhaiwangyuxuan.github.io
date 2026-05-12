@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- 避免中间缓存保留过旧 HTML；静态资源用 ?v=__VERSION__ 做版本刷新 -->
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <script>
     (function () {
       try {
@@ -20,13 +24,13 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/logo.ico?v=__VERSION__" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.svg?v=__VERSION__" type="image/svg+xml">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=__VERSION__">
 
   <!--
     - google font link
@@ -58,7 +62,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Wangyuxuan Zhai" width="80">
+          <img src="./assets/images/my-avatar.png?v=__VERSION__" alt="Wangyuxuan Zhai" width="80">
         </figure>
 
         <div class="info-content">
@@ -506,7 +510,7 @@
                     <ion-icon name="open-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-mucodec2musiclm-architecture.png" alt="mucodec2musicLM architecture"
+                  <img src="./assets/images/project-mucodec2musiclm-architecture.png?v=__VERSION__" alt="mucodec2musicLM architecture"
                     loading="lazy">
                 </figure>
 
@@ -526,7 +530,7 @@
                     <ion-icon name="open-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-qwen3-8b-cover.jpg"
+                  <img src="./assets/images/project-qwen3-8b-cover.jpg?v=__VERSION__"
                     alt="BJTU campus — Qwen3-8B technical report cover" loading="lazy">
                 </figure>
 
@@ -617,7 +621,7 @@
 
         <section class="friends-links-section about-text" aria-labelledby="friends-links-heading">
           <h3 id="friends-links-heading" class="about-inline-title">Friends · 友情链接</h3>
-          <p class="friends-links-lead">Here's my friend's blog. Feel free to drop by and have a look! 下面是我朋友的博客入口，欢迎串门。</p>
+          <p class="friends-links-lead">Here's my friend's blog. Feel free to drop by and have a look! 下面是我朋友的博客入口，欢迎串门！！！</p>
 
 
           <div class="friends-links-col">
@@ -673,7 +677,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=__VERSION__"></script>
 
   <!--
     - ionicon link
