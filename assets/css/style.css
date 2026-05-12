@@ -1880,3 +1880,97 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+
+
+/*-----------------------------------*\
+  #MIGRATED ACADEMIC CONTENT
+\*-----------------------------------*/
+
+.contact-intro { margin-bottom: 22px; }
+
+.contact-link-inline {
+  display: inline;
+  color: var(--orange-yellow-crayola);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-link-inline:hover {
+  color: var(--vegas-gold);
+}
+
+.site-footer-contact { margin-top: 28px; }
+
+.copyright-line {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.copyright-line a {
+  color: var(--orange-yellow-crayola);
+  display: inline;
+}
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.about-badges a { line-height: 0; }
+
+.about-badges img {
+  height: 28px;
+  width: auto;
+}
+
+.about-inline-title {
+  margin: 24px 0 12px;
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  text-transform: none;
+  line-height: 1.3;
+}
+
+.about-text .about-inline-title:first-of-type { margin-top: 8px; }
+
+.about-hr {
+  border: none;
+  border-top: 1px solid var(--jet);
+  margin: 20px 0;
+}
+
+.about-migrated-list {
+  padding-left: 1.2em;
+  margin: 0 0 12px;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.about-migrated-list li { margin-bottom: 10px; }
+
+.side-projects-inner {
+  padding: 22px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.side-projects-inner > div { justify-content: center !important; }
+
+.side-projects-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-awards-card {
+  padding: 22px 24px;
+}
