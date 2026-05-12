@@ -1,6 +1,29 @@
 'use strict';
 
 
+// theme toggle (default: light — see inline script in <head> + localStorage key "theme")
+(function setupThemeToggle() {
+  function applyAria() {
+    var mode = document.documentElement.getAttribute("data-theme") || "light";
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+      btn.setAttribute("aria-label", mode === "dark" ? "切换为日间模式" : "切换为夜间模式");
+    });
+  }
+
+  document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var cur = document.documentElement.getAttribute("data-theme") || "light";
+      var next = cur === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {}
+      applyAria();
+    });
+  });
+  applyAria();
+})();
+
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -150,20 +173,29 @@ if (form && formBtn) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+function activatePageByNav(targetNav) {
+  for (let i = 0; i < pages.length; i++) {
+    const active = pages[i].dataset.page === targetNav;
+    pages[i].classList.toggle("active", active);
+  }
+  for (let i = 0; i < navigationLinks.length; i++) {
+    const active = navigationLinks[i].dataset.nav === targetNav;
+    navigationLinks[i].classList.toggle("active", active);
+  }
+  window.scrollTo(0, 0);
+}
+
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
+    const target = this.dataset.nav;
+    if (!target) return;
+    activatePageByNav(target);
   });
 }
+
+(function initNavHash() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) return;
+  const hasPage = Array.from(pages).some(function (p) { return p.dataset.page === hash; });
+  if (hasPage) activatePageByNav(hash);
+})();

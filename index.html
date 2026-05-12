@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wangyuxuan Zhai Homepage</title>
@@ -11,6 +21,7 @@
     - favicon
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
 
   <!--
     - custom css link
@@ -26,6 +37,11 @@
 </head>
 
 <body>
+
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换为夜间模式" title="日间 / 夜间">
+    <ion-icon name="sunny-outline" class="theme-icon theme-icon-show-when-dark"></ion-icon>
+    <ion-icon name="moon-outline" class="theme-icon theme-icon-show-when-light"></ion-icon>
+  </button>
 
   <!--
     - #MAIN
@@ -49,6 +65,9 @@
           <h1 class="name" title="Wangyuxuan Zhai">Wangyuxuan Zhai</h1>
 
           <p class="title">A nerd who does what he loves.</p>
+          <p class="title">Undergraduate Student @ BJTU</p>
+          <p class="title">Research Intern @ THUHCSI</p>
+          <p class="title">Job intern @ OpenBMB</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +93,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:zhaiwangyuxuan@bjtu.edu.cn" class="contact-link">zhaiwangyuxuan@bjtu.edu.cn</a>
+              <a href="mailto:zhaiwangyuxuan@bjtu.edu.cn" class="contact-link">zhaiwangyuxuan <br>[at] bjtu.edu.cn</a>
             </div>
 
           </li>
@@ -88,7 +107,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Beijing Jiaotong University</address>
+              <address>Haidian, Beijing, China</address>
             </div>
 
           </li>
@@ -136,23 +155,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link data-nav="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-nav="cv">CV</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-nav="project">Projects</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link data-nav="blog">Blog</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link data-nav="others">Others</button>
           </li>
 
         </ul>
@@ -186,55 +205,56 @@
                 alt="Google Scholar"></a>
           </p>
 
-          <h4 class="h4 about-inline-title" id="contact-info">联系我 Contact</h4>
+          <!-- <h4 class="h4 about-inline-title" id="contact-info">联系我 Contact</h4>
 
           <p>If you'd like to engage in a discussion or collaborate, feel free to contact me via email at any time! 🥰🥰🥰</p>
-
-          <p>✉️ <a href="mailto:zhaiwangyuxuan@bjtu.edu.cn">zhaiwangyuxuan [at] bjtu.edu.cn</a></p>
+          <p>✉️ zhaiwangyuxuan [at] bjtu.edu.cn</p> -->
 
           <h4 class="h4 about-inline-title">自我介绍 Biography</h4>
 
-          <p>我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。我具备一定的大语言模型、强化学习、TTS（Text-To-Speech，语音合成）与音乐生成方向的专业知识。目前，我的研究重心为 <strong>TTS</strong> 与<strong>音乐生成</strong>方向。</p>
+          <p>我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我的研究重心为<strong>音乐生成</strong>方向。我对 <strong>语音合成</strong> 方向也有些许涉猎。</p>
 
-          <p>My name is Zhai Wangyuxuan, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. I have knowledge in large language models, reinforcement learning, TTS (Text-To-Speech), and music generation. My current research centers on <strong>TTS and music generation</strong>.</p>
+          <p>My name is Wangyuxuan Zhai, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, my research focus lies in <strong>music generation</strong>. I also have some exposure to <strong>Text To Speech (TTS)</strong>.</p>
 
-          <h4 class="h4 about-inline-title">教育经历 Education</h4>
+          <!-- <h4 class="h4 about-inline-title">教育经历 Education</h4>
 
           <p>🕒 <strong>2023 年 9 月 - 至今</strong><br>📍 <strong>北京交通大学</strong><br>🎓 <strong>计算机学院 人工智能专业 本科生</strong></p>
 
-          <p>🕒 <strong>2023.9 - Present</strong><br>📍 <strong>Beijing Jiaotong University</strong><br>🎓 <strong>Undergraduate Student in Artificial Intelligence, School of Computer Science</strong></p>
+          <p>🕒 <strong>2023.9 - Present</strong><br>📍 <strong>Beijing Jiaotong University</strong><br>🎓 <strong>Undergraduate Student in Artificial Intelligence, School of Computer Science</strong></p> -->
 
           <h4 class="h4 about-inline-title">研究兴趣 Research Interests</h4>
 
           <ul class="about-migrated-list">
-            <li>目前，我的主要研究领域是 <strong>TTS 和音乐生成</strong>🎶；</li>
-            <li>Currently, my main research area is <strong>TTS and Music Generation</strong>🎶.</li>
+            <li>目前，我的主要研究领域是 <strong>音乐生成和语音合成</strong>🎶；</li>
+            <li>Currently, my main research area is <strong>Music Generation and Text To Speech (TTS)</strong>🎶.</li>
           </ul>
 
-          <hr class="about-hr">
+          <!-- <hr class="about-hr">
 
           <ul class="about-migrated-list">
             <li>同时，我还有一些关于 <strong>大语言模型 + 强化学习</strong> 的知识。</li>
             <li>Meanwhile, I have also studied some knowledge related to <strong>LLMs + Reinforcement Learning</strong>.</li>
           </ul>
 
-          <hr class="about-hr">
+          <hr class="about-hr"> -->
 
           <h4 class="h4 about-inline-title">杂项 Misc</h4>
 
           <ul class="about-migrated-list">
-            <li>除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，中央音乐学院业余八级水平。我也会制作以 J-core，Gothic Hardcore 为主要类型的电子音乐🎵，自娱自乐足矣。</li>
+            <li>除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，中央音乐学院业余八级水平。我也会制作电子音乐🎵，自娱自乐足矣。</li>
             <li>我最喜欢的游戏类型是音乐游戏，我曾热衷于街机音游《舞萌 DX》(国服 w44 水平，打着玩的)。</li>
-            <li>Beyond my research, I am also a music lover. I play a little accordion 🪗 — at the amateur Grade 8 level of the Central Conservatory of Music (CCoM). I also produce electronic music mainly in the styles of J-core and Gothic Hardcore 🎵, just for my own enjoyment.</li>
+            <li>Beyond my research, I am also a music lover. I play a little accordion 🪗 — at the amateur Grade 8 level of the Central Conservatory of Music (CCoM). I also produce electronic music 🎵, just for my own enjoyment.</li>
             <li>My favorite game genre is rhythm games. I used to be obsessed with the rhythm game <em>Maimai DX</em>.</li>
           </ul>
-
+<!-- 
           <h4 class="h4 about-inline-title">SERVICE</h4>
 
           <ul class="about-migrated-list">
             <li>None o(=•ェ•=)m</li>
-          </ul>
+          </ul> -->
         </section>
+
+      「不诱于誉，不恐于诽，率道而行，端然正己。」
 
       </article>
 
@@ -243,13 +263,13 @@
 
 
       <!--
-        - #RESUME
+        - #CV
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">CV</h2>
         </header>
 
         <section class="timeline">
@@ -268,22 +288,53 @@
 
               <h4 class="h4 timeline-item-title">北京交通大学 · Beijing Jiaotong University</h4>
 
-              <span>2023.9 — Present</span>
+              <span>2023.9 — 2027.07 </span>
+            
+            </li>
 
-              <p class="timeline-text">
-                🕒 <strong>2023 年 9 月 - 至今</strong><br>
-                📍 <strong>北京交通大学</strong><br>
-                🎓 <strong>计算机学院 人工智能专业 本科生</strong>
-              </p>
+            <li class="timeline-item">
 
-              <p class="timeline-text">
-                🕒 <strong>2023.9 - Present</strong><br>
-                📍 <strong>Beijing Jiaotong University</strong><br>
-                🎓 <strong>Undergraduate Student in Artificial Intelligence, School of Computer Science</strong>
-              </p>
+              <h4 class="h4 timeline-item-title"> Unknown </h4>
+
+              <span>2027.9 — Unknown </span>
 
             </li>
 
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiences</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">OpenBMB<br>面壁智能</h4>
+              <span> 2026.05 - Present </span>
+              <p class="timeline-text">Audio Algorithm Intern 音频算法实习生</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Human-Computer Speech Interaction Lab at Tsinghua University (THU HCSI)<br>清华大学深圳国际研究生院人机语音交互实验室<br>Advisor: Zhiyong Wu</h4>
+              <span>2026.04 - Present</span>
+              <p class="timeline-text">Music Generation & Text-To-Speech 音乐生成 & 语音合成</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Institute for AI Industry Research, Tsinghua University (THU AIR)<br>清华大学智能产业研究院</h4>
+              <span>2025.09 - 2026.04</span>
+              <p class="timeline-text">LLM + Reinforcement Learning 大模型 + 强化学习</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">BJTU NLP Group<br>北交自然语言处理团队<br>Advisor: kaiyu Huang</h4>
+              <span> 2024.09 - 2025.05 </span>
+              <p class="timeline-text">LLM + Geography 大模型 + 地理信息</p>
+            </li>
           </ol>
 
         </section>
@@ -332,18 +383,35 @@
 
         </section>
 
-        <section class="skill">
+        <section class="timeline">
 
-          <h3 class="h3 skills-title">AWARDS </h3>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
 
-          <div class="content-card resume-awards-card">
-            <ul class="about-migrated-list">
-              <li>北京交通大学 2023-2024 年度 国家奖学金</li>
-              <li>National Scholarship, Beijing Jiaotong University, 2023-2024 Academic Year</li>
-              <li>北京交通大学 2024-2025 年度 国家奖学金</li>
-              <li>National Scholarship, Beijing Jiaotong University, 2024-2025 Academic Year</li>
-            </ul>
+            <h3 class="h3">AWARDS</h3>
           </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">北京交通大学 2023-2024 年度 国家奖学金</p>
+
+              <p class="timeline-text">National Scholarship, Beijing Jiaotong University, 2023-2024 Academic Year</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <p class="timeline-text">北京交通大学 2024-2025 年度 国家奖学金</p>
+
+              <p class="timeline-text">National Scholarship, Beijing Jiaotong University, 2024-2025 Academic Year</p>
+
+            </li>
+
+          </ol>
 
         </section>
 
@@ -354,42 +422,122 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #PROJECT
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="project">
 
         <header>
-          <h2 class="h2 article-title">SIDE PROJECTS</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
 
-          <div class="content-card side-projects-inner">
+          <p class="about-badges projects-badges">
+            <a href="https://github.com/zhaiwangyuxuan" target="_blank" rel="noopener noreferrer"><img
+                src="https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub"></a>
+            <a href="https://github.com/zhaiwangyuxuan" target="_blank" rel="noopener noreferrer"><img
+                src="https://img.shields.io/github/followers/zhaiwangyuxuan?style=for-the-badge&logo=github&label=Followers"
+                alt="GitHub followers"></a>
+          </p>
 
-            <p class="about-badges">
-              <a href="https://github.com/zhaiwangyuxuan" target="_blank" rel="noopener noreferrer"><img
-                  src="https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white"
-                  alt="GitHub"></a>
-              <a href="https://github.com/zhaiwangyuxuan" target="_blank" rel="noopener noreferrer"><img
-                  src="https://img.shields.io/github/followers/zhaiwangyuxuan?style=for-the-badge&logo=github&label=Followers"
-                  alt="GitHub followers"></a>
-            </p>
+          <ul class="filter-list">
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1rem;">
-              <a href="https://github.com/zwyx-note/zwyx-note.github.io" target="_blank" rel="noopener noreferrer"><img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=zwyx-note&amp;repo=zwyx-note.github.io"
-                  alt="zwyx-note.github.io"></a>
-              <a href="https://github.com/zhaiwangyuxuan/mucodec2musicLM" target="_blank" rel="noopener noreferrer"><img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=zhaiwangyuxuan&amp;repo=mucodec2musicLM"
-                  alt="mucodec2musicLM"></a>
-              <a href="https://github.com/zhaiwangyuxuan/BJTU_Qwen3-8B-SFT-RL_technical_report"
-                target="_blank" rel="noopener noreferrer"><img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=zhaiwangyuxuan&amp;repo=BJTU_Qwen3-8B-SFT-RL_technical_report"
-                  alt="BJTU_Qwen3-8B-SFT-RL_technical_report"></a>
-            </div>
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Music Generation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>TTS</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Others</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Music Generation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>TTS</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Others</button>
+              </li>
+
+            </ul>
 
           </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="music generation">
+              <a href="https://github.com/zhaiwangyuxuan/mucodec2musicLM" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-mucodec2musiclm-architecture.png" alt="mucodec2musicLM architecture"
+                    loading="lazy">
+                </figure>
+
+                <h3 class="project-title">mucodec2musicLM</h3>
+
+                <p class="project-category">Music Generation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="https://github.com/zhaiwangyuxuan/BJTU_Qwen3-8B-SFT-RL_technical_report" target="_blank"
+                rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="open-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-qwen3-8b-cover.jpg"
+                    alt="BJTU campus — Qwen3-8B technical report cover" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BJTU_Qwen3-8B-SFT-RL_technical_report</h3>
+
+                <p class="project-category">Others</p>
+
+              </a>
+            </li>
+
+          </ul>
 
         </section>
 
@@ -414,166 +562,26 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./blog/hello-world.html">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                <figure class="blog-banner-box blog-banner-box--placeholder">
+                  <span class="blog-placeholder-mark" aria-hidden="true">📝</span>
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">建站</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2026-05-12">May 12, 2026</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">新家与博客模版说明</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    单页改版后第一篇：如何复制模版写新文章、从列表点进独立页面。
                   </p>
 
                 </div>
@@ -592,13 +600,13 @@
 
 
       <!--
-        - #CONTACT
+        - #OTHERS (contact & notes)
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="others">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Others</h2>
         </header>
 
         <section class="contact-intro about-text">
@@ -607,40 +615,47 @@
               bjtu.edu.cn</a></p>
         </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe title="Beijing Jiaotong University on map"
-              src="https://maps.google.com/maps?q=Beijing%20Jiaotong%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+        <section class="friends-links-section about-text" aria-labelledby="friends-links-heading">
+          <h3 id="friends-links-heading" class="about-inline-title">Friends · 友情链接</h3>
+          <p class="friends-links-lead">Here's my friend's blog. Feel free to drop by and have a look! 下面是我朋友的博客入口，欢迎串门。</p>
 
-        <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
+          <div class="friends-links-col">
+            <h4 class="friends-col-title">朋友 Friends</h4>
+            <ul class="friends-links-list">
+              <li class="friends-links-item">
+                <a href="https://speedlast.github.io/" target="_blank" rel="noopener noreferrer" class="friends-link-block">
+                  <span class="friends-link-main">Luyi Lin / speedlast</span>
+                </a>
+                <p class="friends-link-meta">
+                  致力于 Foundation Models、AI Infrastructure & Hardware-aware algorithms 和 AI for math。<br>
+                  <span lang="en" class="friends-link-meta-en">Working on foundation models, AI infrastructure and
+                    hardware-aware algorithms, and AI for math.</span>
+                </p>
+              </li>
+              <li class="friends-links-item">
+                <a href="https://github.com/hewkick" target="_blank" rel="noopener noreferrer" class="friends-link-block">
+                  <span class="friends-link-main">Hewkick</span>
+                </a>
+                <p class="friends-link-meta">
+                  同样也在音频方向工作；我们会一起合作电子音乐。
+                  <a href="https://space.bilibili.com/105344359" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-inline">Bilibili</a><br>
+                  <span lang="en" class="friends-link-meta-en">Also works on audio; we collaborate on electronic music
+                    together —
+                    <a href="https://space.bilibili.com/105344359" target="_blank" rel="noopener noreferrer"
+                      class="contact-link-inline">Bilibili</a>.
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
 
         </section>
 
         <footer class="site-footer-contact">
-          <p class="copyright-line">&copy; Wangyuxuan Zhai 2026. All Rights Reserved. Template by Jerry Yin From <a
-              href="https://github.com/JerryYin777/JerryYin777.github.io" target="_blank"
+          <p class="copyright-line">&copy; Wangyuxuan Zhai 2026. All Rights Reserved. Template From <a
+              href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank"
               rel="noopener noreferrer">This Repo</a>.</p>
         </footer>
 

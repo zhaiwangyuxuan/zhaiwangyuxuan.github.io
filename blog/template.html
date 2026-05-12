@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 修改为本文标题 -->
+  <title>Blog 标题 — Wangyuxuan Zhai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/blog-post.css">
+</head>
+
+<body>
+
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换为夜间模式" title="日间 / 夜间">
+    <ion-icon name="sunny-outline" class="theme-icon theme-icon-show-when-dark"></ion-icon>
+    <ion-icon name="moon-outline" class="theme-icon theme-icon-show-when-light"></ion-icon>
+  </button>
+
+  <!--
+    如何使用本模版：
+    1. 复制本文件并重命名为你想要的 slug，例如 2026-05-13-note.html
+    2. 改掉 <title>、下方 time / 分类、h1、p 段落
+    3. 在首页 index.html 的 Blog 列表里增加一行 <li class="blog-post-item">，链接指向本文件名
+    4. 删除本注释块后再发布（可选）
+  -->
+
+  <div class="blog-post-shell">
+
+    <a class="blog-post-back" href="../index.html#blog">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      返回 Blog
+    </a>
+
+    <article class="blog-post-frame">
+
+      <div class="blog-post-frame-inner">
+
+        <!-- 可选：建站 / 研究 / 生活 … -->
+        <div class="blog-post-meta">
+          <span data-blog-cat>分类名</span>
+          <span class="dot-meta"></span>
+          <time datetime="2026-05-12">May 12, 2026</time>
+        </div>
+
+        <h1 class="h2 article-title blog-post-title">这里是文章标题</h1>
+
+        <div class="blog-post-body">
+          <p>第一段正文。</p>
+          <p>第二段：<a href="https://github.com/zhaiwangyuxuan" target="_blank" rel="noopener noreferrer">外链示例</a>。</p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <script src="../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
