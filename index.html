@@ -216,9 +216,9 @@
 
           <h4 class="h4 about-inline-title">自我介绍 Biography</h4>
 
-          <p>我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我的研究重心为<strong>音乐生成</strong>方向。我对 <strong>语音合成</strong> 方向也有些许涉猎。</p>
+          <p>我叫翟王宇轩，是北京交通大学计算机科学与技术学院人工智能专业的本科生。目前，我的研究重心为<strong>音乐生成</strong>方向。我对 <strong>语音合成 (Text-To-Speech, TTS)</strong> 方向也有些许涉猎。</p>
 
-          <p>My name is Wangyuxuan Zhai, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, my research focus lies in <strong>music generation</strong>. I also have some exposure to <strong>Text To Speech (TTS)</strong>.</p>
+          <p>My name is Wangyuxuan Zhai, an undergraduate student majoring in Artificial Intelligence at the School of Computer Science and Technology, Beijing Jiaotong University. Currently, my research focus lies in <strong>music generation</strong>. I also have some exposure to <strong>Text-To-Speech (TTS)</strong>.</p>
 
           <!-- <h4 class="h4 about-inline-title">教育经历 Education</h4>
 
@@ -245,7 +245,7 @@
           <h4 class="h4 about-inline-title">杂项 Misc</h4>
 
           <ul class="about-migrated-list">
-            <li>除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，中央音乐学院业余八级水平。我也会制作电子音乐🎵，自娱自乐足矣。</li>
+            <li>除了研究之外，我还是一名音乐爱好者。我会一点手风琴🪗，中央音乐学院业余八级水平。<br>我也会制作电子音乐🎵，自娱自乐足矣。</li>
             <li>我最喜欢的游戏类型是音乐游戏，我曾热衷于街机音游《舞萌 DX》(国服 w44 水平，打着玩的)。</li>
             <li>Beyond my research, I am also a music lover. I play a little accordion 🪗 — at the amateur Grade 8 level of the Central Conservatory of Music (CCoM). I also produce electronic music 🎵, just for my own enjoyment.</li>
             <li>My favorite game genre is rhythm games. I used to be obsessed with the rhythm game <em>Maimai DX</em>.</li>
@@ -294,7 +294,7 @@
 
               <span>2023.9 — 2027.07 </span>
             
-            </li>
+            <!-- </li>
 
             <li class="timeline-item">
 
@@ -302,7 +302,7 @@
 
               <span>2027.9 — Unknown </span>
 
-            </li>
+            </li> -->
 
           </ol>
 
@@ -322,11 +322,12 @@
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">OpenBMB<br>面壁智能</h4>
               <span> 2026.05 - Present </span>
-              <p class="timeline-text">Audio Algorithm Intern 音频算法实习生</p>
+              <p class="timeline-text">Audio Large Model Algorithm Intern 音频大模型算法实习生</p>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Human-Computer Speech Interaction Lab at Tsinghua University (THU HCSI)<br>清华大学深圳国际研究生院人机语音交互实验室<br>Advisor: Zhiyong Wu</h4>
+              <h4 class="h4 timeline-item-title">Human-Computer Speech Interaction Lab at Tsinghua University (THU HCSI)<br>清华大学深圳国际研究生院人机语音交互实验室</h4>
               <span>2026.04 - Present</span>
+              <p class="timeline-text">Advisor: Zhiyong Wu</p>
               <p class="timeline-text">Music Generation & Text-To-Speech 音乐生成 & 语音合成</p>
             </li>
             <li class="timeline-item">
@@ -335,8 +336,9 @@
               <p class="timeline-text">LLM + Reinforcement Learning 大模型 + 强化学习</p>
             </li>
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">BJTU NLP Group<br>北交自然语言处理团队<br>Advisor: kaiyu Huang</h4>
+              <h4 class="h4 timeline-item-title">BJTU NLP Group<br>北交自然语言处理团队</h4>
               <span> 2024.09 - 2025.05 </span>
+              <p class="timeline-text">Advisor: kaiyu Huang</p>
               <p class="timeline-text">LLM + Geography 大模型 + 地理信息</p>
             </li>
           </ol>
@@ -563,29 +565,99 @@
 
         <section class="blog-posts">
 
+          <ul class="filter-list blog-filter-list" data-blog-filter-list>
+
+            <li class="filter-item">
+              <button class="active" data-blog-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-blog-filter-btn>Research</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-blog-filter-btn>Thoughts</button>
+            </li>
+
+          </ul>
+
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
-              <a href="./blog/hello-world.html">
+            <li class="blog-post-item active" data-blog-filter-item data-category="thoughts">
+              <a href="./blog/2026-01-01-love-death-and-vtuber.html">
 
                 <figure class="blog-banner-box blog-banner-box--placeholder">
-                  <span class="blog-placeholder-mark" aria-hidden="true">📝</span>
+                  <span class="blog-placeholder-mark" aria-hidden="true">AI</span>
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">建站</p>
+                    <p class="blog-category">Thoughts</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2026-05-12">May 12, 2026</time>
+                    <time datetime="2026-01-01">Jan 1, 2026</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">新家与博客模版说明</h3>
+                  <h3 class="h3 blog-item-title">《爱，死亡，与虚拟主播》</h3>
 
                   <p class="blog-text">
-                    单页改版后第一篇：如何复制模版写新文章、从列表点进独立页面。
+                    从 Neuro 三周年马拉松谈 AI、情感体验与虚拟主播。
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item active" data-blog-filter-item data-category="research">
+              <a href="./blog/2026-03-24-arceae-mucodec2musiclm.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-mucodec2musiclm-architecture.png?v=__VERSION__" alt="mucodec2musicLM architecture" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Research</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-03-24">Mar 24, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Arceae</h3>
+
+                  <p class="blog-text">
+                    端到端音频生成项目 Arceae / mucodec2musicLM 的模型结构、数据与 case study。
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item active" data-blog-filter-item data-category="thoughts">
+              <a href="./blog/2026-04-05-her-review.html">
+
+                <figure class="blog-banner-box blog-banner-box--placeholder">
+                  <span class="blog-placeholder-mark" aria-hidden="true">Her</span>
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Thoughts</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-04-05">Apr 5, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">《Her》观后感</h3>
+
+                  <p class="blog-text">
+                    真实的人、虚伪的交流，以及人类投入 AI 的真挚情感。
                   </p>
 
                 </div>
@@ -632,23 +704,40 @@
                   <span class="friends-link-main">Luyi Lin / speedlast</span>
                 </a>
                 <p class="friends-link-meta">
-                  致力于 Foundation Models、AI Infrastructure & Hardware-aware algorithms 和 AI for math。<br>
-                  <span lang="en" class="friends-link-meta-en">Working on foundation models, AI infrastructure and
-                    hardware-aware algorithms, and AI for math.</span>
+                  致力于基础模型、AI infra、硬件感知算法以及 AI4Math 领域研究。<br>
+                  <span lang="en" class="friends-link-meta-en">Working on foundation models, AI infrastructure and hardware-aware algorithms, and AI for math.</span>
                 </p>
               </li>
               <li class="friends-links-item">
-                <a href="https://github.com/hewkick" target="_blank" rel="noopener noreferrer" class="friends-link-block">
-                  <span class="friends-link-main">Hewkick</span>
+                <a href="https://JianYan11.github.io/" target="_blank" rel="noopener noreferrer" class="friends-link-block">
+                  <span class="friends-link-main">Jian Yan (Cris Yan)</span>
                 </a>
                 <p class="friends-link-meta">
+                  致力于推动人工智能普惠通用，目前专注于推理加速方向。<br>
+                  <span lang="en" class="friends-link-meta-en">Committed to the universal use of AI. Now focusing on inference acceleration.</span>
+                </p>
+              </li>
+              <li class="friends-links-item">
+                <a href="https://mustbeasaltyfish.github.io/" target="_blank" rel="noopener noreferrer" class="friends-link-block">
+                  <span class="friends-link-main">Yukai Wu</span>
+                </a>
+                <p class="friends-link-meta">
+                  专注于大模型/多模态大模型驱动的后训练与智能体系统研究。<br>
+                  <span lang="en" class="friends-link-meta-en">Focusing on post training / agent system powered by LLM/MLLM.</span>
+                </p>
+              </li>
+              <li class="friends-links-item">
+                <a href="https://github.com/hewkick" target="_blank" rel="noopener noreferrer" class="friends-link-block"><span class="friends-link-main">Hewkick</span></a>
+                <p class="friends-link-meta">
                   同样也在音频方向工作；我们会一起合作电子音乐。
-                  <a href="https://space.bilibili.com/105344359" target="_blank" rel="noopener noreferrer"
-                    class="contact-link-inline">Bilibili</a><br>
+                  <a href="https://www.bilibili.com/video/BV1A9JzzEE6Q/" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-inline">Bilibili 链接</a> | <a href="https://music.163.com/song?id=2707180117" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-inline">网易云音乐 链接</a><br>
                   <span lang="en" class="friends-link-meta-en">Also works on audio; we collaborate on electronic music
                     together —
-                    <a href="https://space.bilibili.com/105344359" target="_blank" rel="noopener noreferrer"
-                      class="contact-link-inline">Bilibili</a>.
+                    <a href="https://www.bilibili.com/video/BV1A9JzzEE6Q/" target="_blank" rel="noopener noreferrer"
+                      class="contact-link-inline">Bilibili Link</a> | <a href="https://music.163.com/song?id=2707180117" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-inline">NetEase Cloud Music Link</a>.
                   </span>
                 </p>
               </li>

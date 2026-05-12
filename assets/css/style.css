@@ -87,8 +87,8 @@
   --fs-8: 11px;
 
   /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
+  --fw-300: 400;
+  --fw-400: 450;
   --fw-500: 500;
   --fw-600: 600;
 
@@ -1088,10 +1088,21 @@ html[data-theme="light"] .project-img.project-img--pin {
 
 .blog-posts { margin-bottom: 10px; }
 
+.blog-filter-list {
+  margin-bottom: 24px;
+}
+
 .blog-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.blog-post-item { display: none; }
+
+.blog-post-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
 }
 
 .blog-post-item > a {

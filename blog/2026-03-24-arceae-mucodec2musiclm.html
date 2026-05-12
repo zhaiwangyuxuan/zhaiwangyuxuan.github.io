@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arceae - Wangyuxuan Zhai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=__VERSION__">
+  <link rel="stylesheet" href="../assets/css/blog-post.css?v=__VERSION__">
+</head>
+
+<body>
+
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Light / Dark">
+    <ion-icon name="sunny-outline" class="theme-icon theme-icon-show-when-dark"></ion-icon>
+    <ion-icon name="moon-outline" class="theme-icon theme-icon-show-when-light"></ion-icon>
+  </button>
+
+  <div class="blog-post-shell">
+
+    <a class="blog-post-back" href="../index.html#blog">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back to Blog
+    </a>
+
+    <article class="blog-post-frame">
+
+      <div class="blog-post-frame-inner">
+
+        <div class="blog-post-meta">
+          <span>Research</span>
+          <span class="dot-meta"></span>
+          <time datetime="2026-03-24">Mar 24, 2026</time>
+        </div>
+
+        <h1 class="h2 article-title blog-post-title">Arceae</h1>
+
+        <div class="blog-post-body">
+          <blockquote> 2026.03.24 朋友圈记录，现搬运至博客。是一个自己玩的小玩具，偏实验性。</blockquote>
+          <p>2025 年 8 月 15 日，我做了一个以 MIDI 为主的、实验性 AI 音乐生成项目（ARCEAE-MIDI）。</p>
+          <p>今天，在学习了更多知识后，我在此介绍一个相对更成熟、端到端音频生成的项目：<br>
+            Arceae — ARrange and CrEAtE music。</p>
+          <p>【开源仓库地址】<a href="https://github.com/zhaiwangyuxuan/mucodec2musicLM" target="_blank" rel="noopener noreferrer">https://github.com/zhaiwangyuxuan/mucodec2musicLM</a></p>
+          <p>Project 页面：<a href="../index.html#project">mucodec2musicLM</a></p>
+          <h2>【模型架构】</h2>
+          <figure class="blog-post-figure">
+            <img src="../assets/images/project-mucodec2musiclm-architecture.png?v=__VERSION__" alt="mucodec2musicLM architecture">
+            <figcaption>mucodec2musicLM architecture</figcaption>
+          </figure>
+          <p>在本项目中，我们采用「文本条件 + 音频」统一离散表示：用 MuCodec [2] 将波形编码为 codec token，与风格标签、分段英文描述、歌词及音素一起映射到同一套词表里，由因果 Transformer 语言模型自回归预测音频 token，再经 MuCodec 解码回 48 kHz 立体声（见结构图）。</p>
+          <h2>【训练测试数据】</h2>
+          <p>数据使用 Muse [1] 论文配套开源数据：受算力限制，我们只取训练集中每首英文曲目的前三段，过滤过长序列后，共约 6.66 万条段落级样本用于训练。</p>
+          <h2>【模型参数】</h2>
+          <ol>
+            <li>统一词表 168058（Qwen 子词 + 特殊标记 + 16384 个 MuCodec 码）</li>
+            <li>24 层 Transformer，d_model=1024，16 头，FFN 4096</li>
+            <li>最大序列长度 8192，总可训练参数约 483M</li>
+          </ol>
+          <h2>【训练 / 推理】</h2>
+          <ol>
+            <li>训练：4×A800，每卡 batch 2，7 epoch，AdamW，学习率 3e-4，FP16 AMP</li>
+            <li>推理：给定 JSON（整曲风格 + 各段描述、歌词、时间轴），模型逐段生成 codec 序列并解码为 WAV；温度、MuCodec 扩散步数等可调（详见开源仓库）</li>
+          </ol>
+          <h2>【Case study】</h2>
+          <ol>
+            <li>成功：Electronic Dance Pop、Acoustic Folk 等场景下，部分样本在风格贴合、歌词可辨、旋律完整性上表现较好，并配有波形、梅尔谱与试听。</li>
+            <li>失败：Alternative Rock 等 case 出现后半段无限重复、难以干净收尾，说明长序列稳定性与终止机制仍有改进空间。</li>
+          </ol>
+          <h2>参考文献</h2>
+          <p>[1] Muse 数据集与说明见 <a href="https://github.com/yuhui1038/Muse" target="_blank" rel="noopener noreferrer">https://github.com/yuhui1038/Muse</a><br>
+            [2] MuCodec 论文：<a href="https://arxiv.org/pdf/2409.13216" target="_blank" rel="noopener noreferrer">https://arxiv.org/pdf/2409.13216</a></p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <script src="../assets/js/script.js?v=__VERSION__"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

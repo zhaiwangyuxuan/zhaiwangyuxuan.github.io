@@ -144,6 +144,34 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+// blog filter
+const blogFilterBtns = document.querySelectorAll("[data-blog-filter-btn]");
+const blogFilterItems = document.querySelectorAll("[data-blog-filter-item]");
+
+function filterBlog(selectedValue) {
+  for (let i = 0; i < blogFilterItems.length; i++) {
+    if (selectedValue === "all" || selectedValue === blogFilterItems[i].dataset.category) {
+      blogFilterItems[i].classList.add("active");
+    } else {
+      blogFilterItems[i].classList.remove("active");
+    }
+  }
+}
+
+let lastClickedBlogBtn = blogFilterBtns.length ? blogFilterBtns[0] : null;
+
+for (let i = 0; i < blogFilterBtns.length; i++) {
+  blogFilterBtns[i].addEventListener("click", function () {
+    filterBlog(this.innerText.toLowerCase());
+
+    if (lastClickedBlogBtn) {
+      lastClickedBlogBtn.classList.remove("active");
+      this.classList.add("active");
+      lastClickedBlogBtn = this;
+    }
+  });
+}
+
 
 
 // contact form variables

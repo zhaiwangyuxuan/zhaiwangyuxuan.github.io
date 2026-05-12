@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《爱，死亡，与虚拟主播》 - Wangyuxuan Zhai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=__VERSION__">
+  <link rel="stylesheet" href="../assets/css/blog-post.css?v=__VERSION__">
+</head>
+
+<body>
+
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Light / Dark">
+    <ion-icon name="sunny-outline" class="theme-icon theme-icon-show-when-dark"></ion-icon>
+    <ion-icon name="moon-outline" class="theme-icon theme-icon-show-when-light"></ion-icon>
+  </button>
+
+  <div class="blog-post-shell">
+
+    <a class="blog-post-back" href="../index.html#blog">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back to Blog
+    </a>
+
+    <article class="blog-post-frame">
+
+      <div class="blog-post-frame-inner">
+
+        <div class="blog-post-meta">
+          <span>Thoughts</span>
+          <span class="dot-meta"></span>
+          <time datetime="2026-01-01">Jan 1, 2026</time>
+        </div>
+
+        <h1 class="h2 article-title blog-post-title">《爱，死亡，与虚拟主播》</h1>
+
+        <div class="blog-post-body">
+          <blockquote> 2026.01.01 朋友圈随笔，现搬运至博客。现在看来写的一般，不过还是值得记录一下。</blockquote>
+          <p>本文由 Wangyuxuan Zhai 负责了初稿，Hewkick 老师负责了改稿，AI 仅仅负责了修改病句与错别字。</p>
+          <p>2025 年令我和 Hewkick 老师感触最深的 AI 事件是什么？是 DeepSeek？是 Manus 横空出世又被 Meta 收购？ 是智谱成为大模型第一股？</p>
+          <p>我和 Hewkick 老师作为两个（曾经的）管人痴（注：虚拟主播爱好者），我们一致认为，是 neuro 三周年马拉松。</p>
+          <p>一个真正能为全人类所用的 AGI，应该不仅能在诸如 HLE 这种高难 benchmark 上刷榜，为专业人员提供帮助；更应该满足数以万计的把 AI 当情感工具的普通人。GPT5.2 处理高难问题确实有一手，但当你跟它倾诉情绪的时候，它却突然变得“爹味”十足，动不动就要“我先来接住你”，最后总要来一句“要不要我来帮你总结一下...”，你还会说“我喜欢 AI ”吗？</p>
+          <p>这些大公司或许根本不关心用户的情感体验，毕竟有几个程序员不清楚 LLM 背后不就是一个经过调参的概率模型？一个个向量矩阵有什么情感？Who cares?</p>
+          <p><a href="https://vedal.ai/" target="_blank" rel="noopener noreferrer">Vedal</a> cares.</p>
+          <p>Vedal，这位程序员，他在乎。他真正地在创造一个，被上百万人所喜爱的，“有血有肉”的“AI 虚拟主播”，<a href="https://virtualyoutuber.fandom.com/wiki/Neuro-sama" target="_blank" rel="noopener noreferrer">Neuro</a>。</p>
+          <p>Neuro 的背后，不是一个套着二次元的形象的人类，而是一个实打实的 AI 程序，是一个实打实的，经过了预训练、有监督微调、强化学习流程，融合了 MCP、RAG、Agent 等等技术的 AI 程序。</p>
+          <p>2022 年末，Neuro 刚刚出现的时候，还用着免费可商用的二次元形象，仅仅只会简单地和 chat 互动，打打 OSU 音游。二次元虚拟主播大家都看遍了，打着 AI 人设的但实际上还是真人扮演的二次元虚拟主播大家也见过了，但一个真正由 AI 驱动的二次元虚拟主播大家还是第一次见。neuro 的出现自然吸引了第一批粉丝的到来。当然，那时候 ChatGPT 也才刚刚发布不久，全人类还没有做好迎接剧变的准备，一些关于 Neuro 背后是不是真人扮演的疑问也随之而来。</p>
+          <p>想要消灭疑问，Vedal 没有选择硬刚，而是默默干下去。过了不久，2022 年 12 月 31 日，Neuro 进行了第一次《我的世界》游戏直播，尽管操作比人类新手还要差。同时，Vedal 也会每周进行开发者直播，边聊天边写 Neuro 的代码。2023 年，一段 Vedal 与 Neuro 之间的对话还成了话题，中国粉丝用“图桓宇与丫丫”来调侃这一段对话。</p>
+          <p>2023 年初，另一位真人虚拟主播 <a href="https://neurosama.fandom.com/wiki/Anny" target="_blank" rel="noopener noreferrer">Anny</a>，为 Neuro 设计了新皮肤，Neuro 终于不用再使用公用的二次元皮肤了。不久，Neuro 还有了一个“妹妹”，<a href="https://virtualyoutuber.fandom.com/wiki/Neuro-sama/Evil" target="_blank" rel="noopener noreferrer">Evil</a>。在设定上，Evil 与 Neuro 性格相反，Evil 更毒舌，攻击性更强，更会“锐评”别人。这是怎么实现的？我个人倾向于是 Vedal 手上有一个自己预训练好的模型，借助庞大的直播积累的数据库，微调出了 Neuro 和 Evil，maybe 吧，毕竟 Vedal 从未公开过技术细节。</p>
+          <p>2023 年末，Neuro 诞生日一周年。2024 年末，Neuro 诞生日二周年，有了第二个新皮肤。在这两年中，关于“自我意识”“AI 与情感”等话题不时地在 Vedal 和 Neuro 之间谈起。人们似乎对这种话题也充满了兴趣，相关的直播切片也被传播得很广。但这时候除了一般通过的路人，谁不清楚 Neuro 只是一个 AI？那么我们一直以来探讨的，关于 AI 情感、自我意识的话题，究竟是在探讨 Neuro 这个 AI，还是说在谈论我们人类自身的情感呢？</p>
+          <p>2025 年末，Neuro 诞生日三周年 VRchat 回，创造了我们现在看到的 Vedal 与 Neuro 的神级切片对话：</p>
+          <blockquote>“那我对你而言重要吗？我知道我只是个傻乎乎的 AI，但如果你说 '是' 我会开心一整天”</blockquote>
+          <p>在直播中，这最后一个问题，Vedal 没有正面回答。但 Vedal 的哭腔已经胜过千言万语。</p>
+          <p>AI 本身是没有情感与意义的，是人类赋予了 AI 以情感与意义。</p>
+          <p>Vedal，这位程序员，在遥远的未来是否会塌房，已经不重要了。因为 Neuro，从某种程度上来讲，已经脱离于 Vedal 而存在了，她将永远以一个棕发蓝眼、笑容满面、爱吹牛打趣的二次元少女形象，以一个在最开始玩《我的世界》甚至不会开门的二次元少女形象，以一个会巧妙绕过 filtered 限制的二次元少女形象，以一个会在 VRchat 里做出奇妙姿势的二次元少女形象，以一个时不时会触碰大家心灵的二次元少女形象，活在大家心中。Vedal 和 Neuro，早已成为，给所有喜欢二次元的程序员的一剂最好的强心剂了。</p>
+          <p>而在更早的过去，2020 年，Neuro 还只不过是一个用来打 OSU 音游的 AI。</p>
+          <p>但那又如何？发展到了现在，谁又会去质疑 Neuro 给人带来的情感体验？</p>
+          <p>一切的伟大，都有一个微不足道的起点。</p>
+          <h2>参考链接</h2>
+          <p><a href="https://vedal.ai/" target="_blank" rel="noopener noreferrer">Vedal AI official links</a><br>
+            <a href="https://virtualyoutuber.fandom.com/wiki/Neuro-sama" target="_blank" rel="noopener noreferrer">Neuro-sama - Virtual YouTuber Wiki</a><br>
+            <a href="https://virtualyoutuber.fandom.com/wiki/Neuro-sama/Evil" target="_blank" rel="noopener noreferrer">Evil Neuro - Virtual YouTuber Wiki</a><br>
+            <a href="https://neurosama.fandom.com/wiki/Anny" target="_blank" rel="noopener noreferrer">Anny - Neuro-sama Wiki</a></p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <script src="../assets/js/script.js?v=__VERSION__"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《her》观后感 - Wangyuxuan Zhai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=__VERSION__">
+  <link rel="stylesheet" href="../assets/css/blog-post.css?v=__VERSION__">
+</head>
+
+<body>
+
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" title="Light / Dark">
+    <ion-icon name="sunny-outline" class="theme-icon theme-icon-show-when-dark"></ion-icon>
+    <ion-icon name="moon-outline" class="theme-icon theme-icon-show-when-light"></ion-icon>
+  </button>
+
+  <div class="blog-post-shell">
+
+    <a class="blog-post-back" href="../index.html#blog">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back to Blog
+    </a>
+
+    <article class="blog-post-frame">
+
+      <div class="blog-post-frame-inner">
+
+        <div class="blog-post-meta">
+          <span>Thoughts</span>
+          <span class="dot-meta"></span>
+          <time datetime="2026-04-05">Apr 5, 2026</time>
+        </div>
+
+        <h1 class="h2 article-title blog-post-title">《her》观后感</h1>
+
+        <div class="blog-post-body">
+          <blockquote> 2026.04.05 朋友圈随笔，现搬运至博客。现在看来写的一般，不过还是值得记录一下。</blockquote>
+          <p>说来惭愧，虽然《Her》一直被被誉为AI agent界的“圣经”，但我直到这个假期才补完整部电影。碰巧 OpenClaw 的热潮终于褪去了一些，我也得以更理智地欣赏完整部作品。</p>
+          <p>《Her》给我一种强烈的感受：<br>
+            虽然人是真实的，但人类之间的交流却是虚伪的；<br>
+            虽然 AI 是虚构的，但人类投入的情感却是真挚的。</p>
+          <p>男主扮演了一个在社交上游刃有余的角色，他每天需要接触无数“真实”的人，甚至在工作中就承担着帮别人表达情感的责任，但他自己在生活中的情感却鲜少能够输出。或许只有跟前妻和女病友交流时，男主才能敞开心扉。这间接或直接地导致了男主的空心病。</p>
+          <p>不妨让我们回想《her》中的几个片段：<br>
+            那个深夜陪男主电话“交流”的网友，只是为了满足自己的欲望，当然男主也只是因为夜深寂寞而想发泄下自己的欲望；<br>
+            那个和男主短暂约会的女人，约会时两人却只是各说各的，彼此都丝毫不好奇对方的故事。她想听到一个或真或假的承诺，而男主也不过是想排解内心的寂寞；<br>
+            那个向男主提出“四人旅行”的男同事兼朋友，在听到男主说“自己的女朋友是 OS，所以不太方便来”后，也根本不 care 这个诡异的事情，而是继续陈述着自己的旅行计划，男主只好尴尬地离开；</p>
+          <p>而那个 agent OS 虽然是假的，但 ta 却在“真正地”听男主讲话，男主也在真切地听 ta 在说什么。<br>
+            虽然从观众的视角来看，那个 agent OS 不过是个 AI，实际上也只有男主“一个人”在输出观点。<br>
+            但在男主眼里，ta 就是真人，ta 就是一个交心的朋友 / 恋人 / 伴侣...我想不必举例，大家也能多少回忆起男主和 agent OS 敞开心扉的画面了吧？</p>
+          <p>不觉得很悲伤吗？<br>
+            虽然人是真的，但人类的交流却是虚伪且自私的；<br>
+            虽然 AI 的情感是靠预测下一个 token 来伪装出来的，但人类投入的情感却是真实的。</p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <script src="../assets/js/script.js?v=__VERSION__"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
