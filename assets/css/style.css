@@ -337,7 +337,28 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  width: 136px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow:
+    0 10px 22px hsla(0, 0%, 0%, 0.18),
+    inset 0 1px 0 hsla(0, 0%, 100%, 0.12);
+  border: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html[data-theme="light"] .avatar-box {
+  box-shadow:
+    0 10px 24px hsla(220, 30%, 20%, 0.12),
+    inset 0 1px 0 hsla(0, 0%, 100%, 0.65);
+  border-color: hsla(220, 20%, 35%, 0.12);
 }
 
 .info-content .name {
@@ -1418,9 +1439,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
-
-  .avatar-box img { width: 120px; }
+  .avatar-box { width: 176px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1916,7 +1935,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box { width: 208px; }
 
   .info-content .name {
     white-space: nowrap;
