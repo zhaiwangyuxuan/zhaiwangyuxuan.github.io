@@ -535,6 +535,54 @@ html[data-theme="light"] .avatar-box {
 
 .about-text p { margin-bottom: 15px; }
 
+/**
+ * #artwork hero — 分层视差贺图（data-artwork-layer 数值为视差深度）
+ */
+
+.artwork-hero {
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--eerie-black-1);
+  box-shadow: var(--shadow-2);
+  margin-bottom: 25px;
+}
+
+.artwork-hero-stage {
+  position: relative;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+}
+
+.artwork-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 43%;
+  filter: brightness(0.88) saturate(0.92);
+  transition: filter var(--transition-1);
+  will-change: transform;
+}
+
+.artwork-hero-caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--jet);
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+}
+
+.artwork-hero-caption ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
 
 
 /**
@@ -1146,7 +1194,7 @@ html[data-theme="light"] .project-img.project-img--pin {
 
 .blog-banner-box {
   width: 100%;
-  height: 200px;
+  height: 120px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -1167,7 +1215,7 @@ html[data-theme="light"] .project-img.project-img--pin {
   justify-content: flex-start;
   align-items: center;
   gap: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .blog-meta :is(.blog-category, time) {
@@ -1184,7 +1232,8 @@ html[data-theme="light"] .project-img.project-img--pin {
 }
 
 .blog-item-title {
-  margin-bottom: 10px;
+  font-size: var(--fs-4);
+  margin-bottom: 8px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
@@ -1211,7 +1260,7 @@ html[data-theme="light"] .project-img.project-img--pin {
 }
 
 .blog-placeholder-mark {
-  font-size: 3rem;
+  font-size: 2.2rem;
   line-height: 1;
   user-select: none;
 }
@@ -1351,6 +1400,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
+
+  /* 博文封面固定小高度，保持卡片紧凑 */
+  .blog-banner-box { height: 130px; }
 
 }
 
@@ -1610,7 +1662,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .blog-content { padding: 14px; }
 
 
 
@@ -1683,6 +1735,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * ABOUT
    */
+
+  /* 宽幅横幅裁切：桌面端进一步压扁为 7:2 横条幅 */
+
+  .artwork-hero-stage { aspect-ratio: 7 / 2; }
 
   /* testimonials modal */
 
@@ -1844,7 +1900,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list, .blog-posts-list { grid-template-columns: repeat(3, 1fr); }
 
 
 
@@ -1852,7 +1908,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * BLOG
    */
 
-  .blog-banner-box { height: 230px; }
+  .blog-banner-box { height: 150px; }
 
 }
 
@@ -2326,6 +2382,8 @@ html[data-theme="light"] .overlay {
 html[data-theme="light"] .blog-banner-box--placeholder {
   background: linear-gradient(135deg, hsl(220, 14%, 90%), hsl(220, 16%, 96%));
 }
+
+html[data-theme="light"] .artwork-layer { filter: none; }
 
 @media (min-width: 1250px) {
 

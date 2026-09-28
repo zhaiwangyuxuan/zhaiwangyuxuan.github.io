@@ -227,3 +227,58 @@ for (let i = 0; i < navigationLinks.length; i++) {
   const hasPage = Array.from(pages).some(function (p) { return p.dataset.page === hash; });
   if (hasPage) activatePageByNav(hash);
 })();
+
+
+
+// artwork hero: layered pointer parallax (desktop fine-pointer only)
+(function initArtworkHero() {
+  const hero = document.querySelector("[data-artwork-hero]");
+  if (!hero) return;
+  if (!window.matchMedia("(pointer: fine)").matches) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const stage = hero.querySelector(".artwork-hero-stage");
+  const layers = hero.querySelectorAll("[data-artwork-layer]");
+  if (!stage) return;
+
+  const SCALE = 1.12;   // 放大留出视差位移余量
+  const SHIFT_X = 0.02; // depth=1 图层的最大位移，占容器宽/高比例
+  const SHIFT_Y = 0.045;
+  let targetX = 0, targetY = 0, currentX = 0, currentY = 0, rafId = null;
+  let stageW = 0, stageH = 0;
+
+  function render() {
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
+    const maxX = stageW * SHIFT_X;
+    const maxY = stageH * SHIFT_Y;
+    for (let i = 0; i < layers.length; i++) {
+      const depth = parseFloat(layers[i].dataset.artworkLayer) || 0;
+      const x = -currentX * maxX * depth;
+      const y = -currentY * maxY * depth;
+      layers[i].style.transform = "translate3d(" + x + "px, " + y + "px, 0) scale(" + SCALE + ")";
+    }
+    if (Math.abs(targetX - currentX) > 0.001 || Math.abs(targetY - currentY) > 0.001) {
+      rafId = requestAnimationFrame(render);
+    } else {
+      rafId = null;
+    }
+  }
+
+  function kick() { if (rafId === null) rafId = requestAnimationFrame(render); }
+
+  stage.addEventListener("pointermove", function (e) {
+    const rect = stage.getBoundingClientRect();
+    stageW = rect.width;
+    stageH = rect.height;
+    targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+    targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+    kick();
+  });
+
+  stage.addEventListener("pointerleave", function () {
+    targetX = 0;
+    targetY = 0;
+    kick();
+  });
+})();
