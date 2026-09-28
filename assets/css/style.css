@@ -566,6 +566,7 @@ html[data-theme="light"] .avatar-box {
   height: 100%;
   object-fit: cover;
   object-position: 50% 43%;
+  transform: scale(1.12); /* 与 JS 中 SCALE 一致，加载即处于视差就绪状态 */
   filter: brightness(0.88) saturate(0.92);
   transition: filter var(--transition-1);
   will-change: transform;

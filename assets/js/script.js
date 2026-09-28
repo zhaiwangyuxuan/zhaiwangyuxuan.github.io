@@ -241,6 +241,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 // artwork hero: layered pointer parallax (mouse hover / touch drag)
+// 触屏设备无悬停，给一个固定的默认倾角（HOME_*），静止时也能看出分层纵深
 (function initArtworkHero() {
   const hero = document.querySelector("[data-artwork-hero]");
   if (!hero) return;
@@ -250,12 +251,21 @@ for (let i = 0; i < navigationLinks.length; i++) {
   const layers = hero.querySelectorAll("[data-artwork-layer]");
   if (!stage) return;
 
-  const SCALE = 1.12;   // 放大留出视差位移余量
+  const SCALE = 1.12;   // 与 CSS .artwork-layer 的 scale 基准一致，留出视差位移余量
   const SHIFT_X = 0.02; // depth=1 图层的最大位移，占容器宽/高比例
   const SHIFT_Y = 0.045;
-  let targetX = 0, targetY = 0, currentX = 0, currentY = 0, rafId = null;
+  const coarse = window.matchMedia("(pointer: coarse)").matches;
+  const HOME_X = coarse ? 0.45 : 0; // 触屏默认倾角（归一化 -1..1）
+  const HOME_Y = coarse ? -0.2 : 0;
+  let targetX = HOME_X, targetY = HOME_Y, currentX = 0, currentY = 0, rafId = null;
   let stageW = 0, stageH = 0;
   let touching = false;
+
+  function measure() {
+    const rect = stage.getBoundingClientRect();
+    stageW = rect.width;
+    stageH = rect.height;
+  }
 
   function render() {
     currentX += (targetX - currentX) * 0.08;
@@ -275,11 +285,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   }
 
-  function kick() { if (rafId === null) rafId = requestAnimationFrame(render); }
+  function kick() {
+    if (rafId === null) {
+      if (!stageW) measure();
+      rafId = requestAnimationFrame(render);
+    }
+  }
 
   function reset() {
-    targetX = 0;
-    targetY = 0;
+    targetX = HOME_X;
+    targetY = HOME_Y;
     kick();
   }
 
@@ -315,4 +330,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
     touching = false;
     reset();
   });
+
+  kick();
 })();
