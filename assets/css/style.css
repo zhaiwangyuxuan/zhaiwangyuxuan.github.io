@@ -337,7 +337,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  width: 136px;
+  width: 92px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -1491,7 +1491,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { width: 176px; }
+  .avatar-box { width: 150px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1991,7 +1991,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box { width: 208px; }
+  .avatar-box { width: 170px; }
 
   .info-content .name {
     white-space: nowrap;
