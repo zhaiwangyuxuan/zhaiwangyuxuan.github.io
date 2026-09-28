@@ -426,6 +426,10 @@ html[data-theme="light"] .avatar-box {
   visibility: visible;
 }
 
+.info_more-btn ion-icon { transition: var(--transition-1); }
+
+.sidebar.active .info_more-btn ion-icon { transform: rotate(180deg); }
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -552,6 +556,7 @@ html[data-theme="light"] .avatar-box {
   position: relative;
   aspect-ratio: 21 / 9;
   overflow: hidden;
+  touch-action: pan-y; /* 纵向滑动照常翻页，横向拖动驱动视差 */
 }
 
 .artwork-layer {
@@ -1988,6 +1993,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 60px;
     z-index: 1;
   }
+
+  /* 桌面端始终完全展开，覆盖 580px 断点里 .sidebar.active 的 584px 上限 */
+
+  .sidebar.active { max-height: max-content; }
 
   .sidebar-info { flex-direction: column; }
 

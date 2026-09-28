@@ -33,10 +33,20 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const sidebarBtnLabel = sidebarBtn ? sidebarBtn.querySelector("span") : null;
 
 // sidebar toggle functionality for mobile
+function syncSidebarBtnLabel() {
+  if (!sidebar || !sidebarBtnLabel) return;
+  sidebarBtnLabel.textContent = sidebar.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+}
+
 if (sidebarBtn && sidebar) {
-  sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+  sidebarBtn.addEventListener("click", function () {
+    elementToggleFunc(sidebar);
+    syncSidebarBtnLabel();
+  });
+  syncSidebarBtnLabel();
 }
 
 
@@ -230,11 +240,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
-// artwork hero: layered pointer parallax (desktop fine-pointer only)
+// artwork hero: layered pointer parallax (mouse hover / touch drag)
 (function initArtworkHero() {
   const hero = document.querySelector("[data-artwork-hero]");
   if (!hero) return;
-  if (!window.matchMedia("(pointer: fine)").matches) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const stage = hero.querySelector(".artwork-hero-stage");
@@ -246,6 +255,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   const SHIFT_Y = 0.045;
   let targetX = 0, targetY = 0, currentX = 0, currentY = 0, rafId = null;
   let stageW = 0, stageH = 0;
+  let touching = false;
 
   function render() {
     currentX += (targetX - currentX) * 0.08;
@@ -267,18 +277,42 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   function kick() { if (rafId === null) rafId = requestAnimationFrame(render); }
 
-  stage.addEventListener("pointermove", function (e) {
+  function reset() {
+    targetX = 0;
+    targetY = 0;
+    kick();
+  }
+
+  function updateFromEvent(e) {
     const rect = stage.getBoundingClientRect();
     stageW = rect.width;
     stageH = rect.height;
     targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
     targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
     kick();
+  }
+
+  stage.addEventListener("pointerdown", function (e) {
+    if (e.pointerType !== "touch" || !e.isPrimary) return;
+    touching = true;
+    updateFromEvent(e);
   });
 
+  stage.addEventListener("pointermove", function (e) {
+    if (e.pointerType === "touch" && !touching) return; // 触摸仅按住拖动时生效，鼠标悬停始终生效
+    updateFromEvent(e);
+  });
+
+  function endTouch(e) {
+    if (e.pointerType !== "touch") return;
+    touching = false;
+    reset();
+  }
+
+  stage.addEventListener("pointerup", endTouch);
+  stage.addEventListener("pointercancel", endTouch);
   stage.addEventListener("pointerleave", function () {
-    targetX = 0;
-    targetY = 0;
-    kick();
+    touching = false;
+    reset();
   });
 })();
